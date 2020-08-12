@@ -1,12 +1,11 @@
 .sos_logo {
-  margin: calc(var(--margin) * 0); }
+  margin: 0rem; }
 
 .sos_logo__link {
   color: transparent;
   background-image: url("../svg/game_logo.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  padding: var(--padding); }
+  background-position: 0 0;
+  background-repeat: no-repeat; }
 
 .sos_nav {
   display: none; }
@@ -17,8 +16,9 @@
 .sos_menu {
   color: transparent;
   background-image: url("../svg/menu_icon.svg");
+  background-position: 0 0;
   background-repeat: no-repeat;
-  margin: calc(var(--margin) * 0); }
+  margin: 0rem; }
 
 :root {
   --padding: 1rem;

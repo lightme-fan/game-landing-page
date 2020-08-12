@@ -1,0 +1,8 @@
+// From _variables.scss:
+@function image($filename) {
+    @return url("../img/#{$filename}");
+  }
+  // In your component.scss file:
+  selector {
+    background-image: image('test.svg');
+  }
