@@ -1,17 +1,30 @@
 // From _variables.scss:
 $fonts: (
-  'open sans': open-sans,
-  'bebas neue': bebas-neue
+  (
+    family: 'Open Sans',
+    filename: 'openSans',
+    weight: 400,
+    style: normal,
+  ),
+
+  (
+    family: 'Bebas Neue',
+    filename: 'BebasNeue',
+    weight: 400,
+    style: normal,
+  ),
 );
 
-@each $family, $filename in $fonts {
+@each $font in $fonts {
   @font-face {
-    font-family: #{$family};
-    src: local(#{$family});
-    src: url('./fonts/#{$filename}-regular.woff2') format('woff2'),
-         url('./fonts/#{$filename}-regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 400;
+    font-family: map-get($font,  'family');
+    font-weight: map-get($font, 'weight');
+    font-style: map-get($font, 'style');
+    src: local(map-get($font, 'family'));
+    src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2),
+      url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2);
+    font-style: map-get($font, 'normal');
+
   }
 }
 
