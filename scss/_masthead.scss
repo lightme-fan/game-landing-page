@@ -1,0 +1,24 @@
+@import "variable";
+
+.masthead {
+    @include background('../image/bg_1.png');
+    background-size: 100%;
+}
+
+.all_costs {
+    margin: $base-margin * 0;
+}
+
+.masthead_main {
+    // max-height: 571px;
+    padding: $base-padding;
+}
+
+.call_action {
+    padding-top: 180px;
+    padding-bottom: 175px;
+}
+
+.sos_story {
+    padding-bottom: 50px;
+}

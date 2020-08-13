@@ -1,0 +1,10 @@
+@import "variable";
+
+body {
+    color: $base-color;
+    margin: $base-margin * 0;
+}
+
+a {
+    text-decoration: $link-decoration;
+}

@@ -13,7 +13,21 @@
   src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
 
 body {
-  font-family: 'Open Sans'; }
+  color: #FFFFFF;
+  margin: 0rem; }
+
+a {
+  text-decoration: none; }
+
+.sos {
+  width: 100%;
+  position: absolute; }
+
+.sos_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem; }
 
 .sos_logo {
   margin: 0rem; }
@@ -27,12 +41,43 @@ body {
 .sos_nav {
   display: none; }
 
-#languages {
-  border: none; }
+.languages {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  padding-block-start: 10px;
+  padding-inline-start: 7rem; }
+
+.language {
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-align: center; }
 
 .sos_menu {
   color: transparent;
   background-image: url("../svg/menu_icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  margin: 0rem;
+  background-position: 50%;
+  border-right: 1px solid; }
+
+.masthead {
+  background-image: url("../image/bg_1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.all_costs {
   margin: 0rem; }
+
+.masthead_main {
+  padding: 1rem; }
+
+.call_action {
+  padding-top: 180px;
+  padding-bottom: 175px; }
+
+.sos_story {
+  padding-bottom: 50px; }
