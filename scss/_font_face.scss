@@ -1,8 +1,17 @@
 // From _variables.scss:
-@function image($filename) {
-    @return url("../img/#{$filename}");
+$fonts: (
+  'open sans': open-sans,
+  'bebas neue': bebas-neue
+);
+
+@each $family, $filename in $fonts {
+  @font-face {
+    font-family: #{$family};
+    src: local(#{$family});
+    src: url('./fonts/#{$filename}-regular.woff2') format('woff2'),
+         url('./fonts/#{$filename}-regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
   }
-  // In your component.scss file:
-  selector {
-    background-image: image('test.svg');
-  }
+}
+

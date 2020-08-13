@@ -1,51 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <link rel="stylesheet" href="./webroot/css/index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+        <link rel="stylesheet" href="./webroot/css/index.css">
+    </head>
 
-<body>
-    <header class="sos_masthead">
-        <h1 class="sos_logo">
-            <a href="sos_game" class="sos_logo__link">Sos</a>
-        </h1>
-        <ul class="sos_nav">
-            <li class="sos_list__item main">Main</li>
-            <li class="sos_list__item about">About</li>
-            <li class="sos_list__item game_feature">Game features</li>
-            <li class="sos_list__item system">System requires</li>
-            <li class="sos_list__item quotes">Quotes</li>
-        </ul>
-        <div class="languages">
-            <label for="languages"></label>
-            <select name="languages" id="languages">
-                <option value="english">ENG</option>
-                <option value="russian">RUS</option>
-                <option value="french">FRA</option>
-                <option value="dutch">DEU</option>
-            </select>
-        </div>
-        <p class="sos_menu">Menu</p>
-    </header>
+    <body>
+        <header class="sos">
+            <h1 class="sos_logo">
+                <a href="sos_game" class="sos_logo__link">Sos</a>
+            </h1>
+        </header>
+        
+        <main>
+            <header class="masthead">
+                <h2 class="game_masthead"></h2>
 
-    <article class="sos_costs">
-        <h2 class="all_costs">Survive at all costs</h2>
-        <p class="sos_experience">Experience new social battle <span>Royal game</span></p>
-        <p class="buy_btn">
-            <a href="" class="buy_now_on_steam">Buy now on Steam | $14.99</a>
-        </p>
-    </article>
+                <ul class="sos_nav">
+                    <li class="sos_list__item main">Main</li>
+                    <li class="sos_list__item about">About</li>
+                    <li class="sos_list__item game_feature">Game features</li>
+                    <li class="sos_list__item system">System requires</li>
+                    <li class="sos_list__item quotes">Quotes</li>
+                </ul>
+                
+                <fieldset class="languages">
+                    <label for="languages"></label>
+                    <select name="languages" id="languages">
+                        <option value="english">ENG</option>
+                        <option value="russian">RUS</option>
+                        <option value="french">FRA</option>
+                        <option value="dutch">DEU</option>
+                    </select>
+                </fieldset>
+                <p class="sos_menu">Menu</p>
+            </header>
 
-    <div class="sos_story">
-        <p>The story</p>
-    </div>
-    </header>
+            <article class="sos_costs">
+                <div class="call_action">
+                    <h2 class="all_costs">Survive at all costs</h2>
+                    <p class="sos_experience">Experience new social battle <span>Royal game</span></p>
+                    <p class="buy_btn">
+                        <a href="" class="buy_now_on_steam">Buy now on Steam | $14.99</a>
+                    </p>
+                </div>
 
+                <div class="sos_story">
+                    <p>The story</p>
+                </div>
+            </article>
 
-</body>
+            <article class="sos_description">
+                <header class="sos_description_header">
+                    <h2 class="heading_question">What is sos?</h2>
+                    <p class="sos_answer">Social battle royal game</p>
+                </header>
+                <div class="sos_explanation">
+                    <p class="sos_competition">
+                        Each round, you and 15 other contestants compete to
+                        escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                        solo or form friendships with others to escape? 
+                    </p>
+                    <span class="sos_competition">
+                        Making the right decisions could be the
+                        difference between life and death.
+                    </span>
+                </div>
+            </article>
+
+            <article class="sos_features">
+                <header class="sos_features_header">
+                    <h2 class="feature_header_question">What's so special?</h2>
+                    <p class="feature_answer">Features</p>
+                </header>
+                    <ul class="sos_feature_list">
+                        <li class="sos_feature_item">
+                            Survive at all costs
+                            <span class="survive_at_costs">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.
+                            </span>  
+                        </li>
+                        <li class="sos_feature_item">
+                            Create allies and enemies
+                        </li>
+                        <li class="sos_feature_item">
+                            Impress the audience
+                        </li>
+                    </ul>
+            </article>
+
+            <article class="system">
+                <header class="system_header">
+                    <h2 class="system_question">Can my computer run this game?</h2>
+                    <p class="system_answer">System Requirements</p>
+                </header>
+                <ul class="system_list">
+                    <li class="system_list_item">
+                        OS:
+                        <span class="system_description">
+                            Windows 7 64-bit only
+                            (No OSX support at this time)
+                        </span>
+                    </li>
+                    <li class="system_list_item">
+                        Processor:
+                        <span class="system_description">
+                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
+                        </span>
+                    </li>
+                    <li class="system_list_item">
+                        Memory:
+                        <span class="system_description">8GB RAM</span>
+                    </li>
+                    <li class="system_list_item">
+                        Storage:
+                        <span class="system_description">8GB available space</span>
+                    </li>
+                    <li class="system_list_item">
+                        Graphics:
+                        <span class="system_description">
+                            NVIDIA GeForce GTX 660 2GB or 
+                            AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                        </span>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="quotes">
+                <header class="qoute_header">
+                    <h2 class="quote_header_question">What people think?</h2>
+                    <p class="quote_header_answer">Press quotes</p>
+                    p.
+                </header>
+            </article>
+
+        </main>
+    </body>
 
 </html>

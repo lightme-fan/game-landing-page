@@ -1,6 +1,6 @@
 @import "variable";
 
-
+@include fontFace;
 .sos_logo {
     margin: $base-margin * 0;
 }

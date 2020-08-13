@@ -15,18 +15,3 @@ $base-padding: 1rem;
 $base-margin: 1rem;
 
 // Font faces
-@mixin fontFace($path, $family, $type: '', $style: normal, $display: swap) {
-    @font-face {
-        font-family: $family;
-        src: local($family);
-        src: url('#{$path}#{$type}.woff2') format('woff2');
-        src: url('#{$path}#{$type}.woff') format('woff');
-        font-style: $style;
-        font-display: $display;
-    }
-}
-
-$bebasfont: '../fonts/';
-$opensass: '../fonts/';
-$boldweight: 700;
-$normalweight: 400;
