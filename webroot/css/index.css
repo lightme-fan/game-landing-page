@@ -6,6 +6,13 @@
   src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
 
 @font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans");
+  src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
+
+@font-face {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
@@ -14,7 +21,9 @@
 
 body {
   color: #FFFFFF;
-  margin: 0rem; }
+  margin: 0rem;
+  font-family: 'bebas neue';
+  font-weight: 400; }
 
 a {
   text-decoration: none; }
@@ -67,12 +76,32 @@ a {
   background-image: url("../image/bg_1.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  text-align: center; }
 
 .all_costs {
-  margin: 0rem; }
+  margin: 0rem;
+  font-family: Bebas Neue;
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 3px; }
+
+.sos_experience {
+  font-family: Bebas Neue;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px; }
+
+.buy_now_on_steam {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 3px solid; }
 
 .masthead_main {
+  max-height: 571px;
   padding: 1rem; }
 
 .call_action {
@@ -81,3 +110,30 @@ a {
 
 .sos_story {
   padding-bottom: 50px; }
+
+.sos_description {
+  background-image: url("../image/bg_image 2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black; }
+
+.heading_question {
+  margin: 0rem; }
+
+.sos_answer {
+  margin: 0rem; }
+
+.sos_description_header {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem; }
+
+.line_separation {
+  border-bottom: 2px solid;
+  margin-inline-start: 1rem;
+  padding-bottom: 5rem; }
+
+.sos_explanation {
+  padding-left: 4rem;
+  padding-right: 2rem; }

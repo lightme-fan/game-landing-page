@@ -3,14 +3,35 @@
 .masthead {
     @include background('../image/bg_1.png');
     background-size: 100%;
+    text-align: $text-align;
 }
 
 .all_costs {
     margin: $base-margin * 0;
+    font-family: Bebas Neue;
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+
+.sos_experience {
+    font-family: Bebas Neue;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px
+}
+
+.buy_now_on_steam {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 3px solid;
 }
 
 .masthead_main {
-    // max-height: 571px;
+    max-height: 571px;
     padding: $base-padding;
 }
 
