@@ -22,7 +22,7 @@
 body {
   color: #FFFFFF;
   margin: 0rem;
-  font-family: 'bebas neue';
+  font-family: 'Open Sans';
   font-weight: 400; }
 
 a {
@@ -36,7 +36,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .sos_logo {
   margin: 0rem; }
@@ -54,7 +57,7 @@ a {
   border-top: none;
   border-bottom: none;
   border-left: none;
-  padding-block-start: 10px;
+  padding-block-start: 1rem;
   padding-inline-start: 7rem; }
 
 .language {
@@ -72,12 +75,40 @@ a {
   background-position: 50%;
   border-right: 1px solid; }
 
+@media (min-width: 968px) {
+  .sos_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+  .sos_list__item {
+    padding-right: 2rem; }
+  .languages {
+    padding-inline-start: 0rem; }
+  .language {
+    display: block;
+    text-align: end; } }
+
 .masthead {
-  background-image: url("../image/bg_1.png");
+  background-image: url("../image/bg_image1.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 50%;
   text-align: center; }
+
+.masthead_header {
+  max-width: 1114px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding: 1rem; }
 
 .all_costs {
   margin: 0rem;
@@ -97,19 +128,50 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-  border-radius: 3px solid; }
-
-.masthead_main {
-  max-height: 571px;
-  padding: 1rem; }
+  padding: 1rem;
+  background-color: #e1b548;
+  border-radius: 5px;
+  border: none; }
 
 .call_action {
   padding-top: 180px;
   padding-bottom: 175px; }
 
 .sos_story {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.radio_button {
+  text-align: center; }
+
+@media (min-width: 968px) {
+  .masthead {
+    background-image: url("../image/bg_image1.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: 50%; }
+  .radio_button {
+    display: none; }
+  .sos_story {
+    list-style: none;
+    display: block;
+    text-align: center; }
+  .all_costs {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px; }
+  .sos_experience {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px; }
+  .buy_now_on_steam {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem 1.5; } }
 
 .sos_description {
   background-image: url("../image/bg_image 2.png");

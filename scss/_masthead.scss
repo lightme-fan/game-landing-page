@@ -1,9 +1,18 @@
 @import "variable";
 
 .masthead {
-    @include background('../image/bg_1.png');
-    background-size: 100%;
+    @include background('../image/bg_image1.jpg');
+    background-size: cover;
+    background-position: 50%;
     text-align: $text-align;
+}
+
+.masthead_header {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding: $base-padding;
+
 }
 
 .all_costs {
@@ -26,13 +35,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-    background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-    border-radius: 3px solid;
-}
-
-.masthead_main {
-    max-height: 571px;
-    padding: $base-padding;
+    padding:  $base-padding;
+    background-color: rgb(225, 181, 72);
+    border-radius: 5px;
+    border: none;
 }
 
 .call_action {
@@ -42,4 +48,48 @@
 
 .sos_story {
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio_button {
+    text-align: center;
+}
+
+@media (min-width: 968px) {
+    .masthead {
+        @include background('../image/bg_image1.jpg');
+        background-position: 50%;
+    }
+
+    .radio_button {
+        display: none;
+    }
+
+    .sos_story {
+        list-style: $list-style;
+        display: block;
+        text-align: center;
+    }
+
+    .all_costs {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 3px;
+    }
+    
+    .sos_experience {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+
+    .buy_now_on_steam {
+        padding-left: $base-padding * 3;
+        padding-right: $base-padding * 3;
+        padding-top: $base-padding * 1.5;
+        padding-bottom: $base-padding 1.5;
+    }
 }
