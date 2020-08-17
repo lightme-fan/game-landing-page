@@ -3,21 +3,21 @@
   font-weight: 400;
   font-style: normal;
   src: local("Open Sans");
-  src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
+  src: url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2), url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2); }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
   src: local("Open Sans");
-  src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
+  src: url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2), url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2); }
 
 @font-face {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
   src: local("Bebas Neue");
-  src: url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2), url('./fonts/map-get($font, "filename")-regular.woff2') format(woff2); }
+  src: url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2), url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2); }
 
 body {
   color: #FFFFFF;
@@ -75,7 +75,10 @@ a {
   background-position: 50%;
   border-right: 1px solid; }
 
-@media (min-width: 968px) {
+.header_icons {
+  display: none; }
+
+@media (min-width: 800px) {
   .sos_nav {
     display: flex;
     flex-direction: row;
@@ -94,14 +97,20 @@ a {
     padding-inline-start: 0rem; }
   .language {
     display: block;
-    text-align: end; } }
+    text-align: end; }
+  .sos_menu {
+    display: none; }
+  .header_icons {
+    display: block;
+    background-image: url("../svg/xbox.svg"), url("../svg/steam.svg");
+    background-repeat: no-repeat, no-repeat; } }
 
 .masthead {
-  background-image: url("../image/bg_image1.jpg");
+  background-image: url("../image/bg_mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: 50% 20%;
   text-align: center; }
 
 .masthead_header {
@@ -147,12 +156,13 @@ a {
 .radio_button {
   text-align: center; }
 
-@media (min-width: 968px) {
+@media (min-width: 800px) {
   .masthead {
-    background-image: url("../image/bg_image1.jpg");
+    background-image: url("../image/bg_desktop.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-position: 50%; }
+    background-position: 50% 50%;
+    background-size: cover; }
   .radio_button {
     display: none; }
   .sos_story {

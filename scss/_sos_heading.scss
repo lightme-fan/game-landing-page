@@ -51,7 +51,11 @@
     border-right: 1px solid;  
 }
 
-@media (min-width: 968px) {
+.header_icons {
+    display: none;
+}
+
+@media (min-width: 800px) {
     .sos_nav {
         display: flex;
         flex-direction: row;
@@ -76,5 +80,15 @@
     .language {
         display: block;
         text-align: end;
+    }
+
+    .sos_menu {
+        display: none;
+    }
+
+    .header_icons {
+        display: block;
+        background-image: url('../svg/xbox.svg'), url('../svg/steam.svg');
+        background-repeat: no-repeat, no-repeat;
     }
 }

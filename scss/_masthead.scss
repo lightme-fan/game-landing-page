@@ -1,9 +1,9 @@
 @import "variable";
 
 .masthead {
-    @include background('../image/bg_image1.jpg');
+    @include background('../image/bg_mobile.jpg');
     background-size: cover;
-    background-position: 50%;
+    background-position: 50% 20%;
     text-align: $text-align;
 }
 
@@ -58,10 +58,11 @@
     text-align: center;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 800px) {
     .masthead {
-        @include background('../image/bg_image1.jpg');
-        background-position: 50%;
+        @include background('../image/bg_desktop.jpg');
+        background-position: 50% 50%;
+        background-size: cover;
     }
 
     .radio_button {
