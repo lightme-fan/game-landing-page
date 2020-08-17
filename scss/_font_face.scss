@@ -2,21 +2,21 @@
 $fonts: (
   (
     family: 'Open Sans',
-    filename: 'openSans',
+    file: 'OpenSans-Regular',
     weight: 400,
     style: normal,
   ),
 
   (
     family: 'Open Sans',
-    filename: 'OpenSans',
+    filename: 'OpenSans-Bold',
     weight: 700,
     style: normal,
   ),
 
   (
     family: 'Bebas Neue',
-    filename: 'BebasNeue',
+    filename: 'BebasNeue-Regular',
     weight: 400,
     style: normal,
   ),
@@ -28,19 +28,10 @@ $fonts: (
     font-weight: map-get($font, 'weight');
     font-style: map-get($font, 'style');
     src: local(map-get($font, 'family'));
-    src: url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2),
-      url('./fonts/map-get($font, "filename"-regular).woff2') format(woff2);
+    src: url('./fonts/map-get($font, "filename").woff2') format(woff2),
+      url('./fonts/map-get($font, "filename").woff2') format(woff2);
     font-style: map-get($font, 'normal');
   }
 
-  // @font-face {
-  //   font-family: map-get($font,  'family');
-  //   font-weight: map-get($font, 'weight');
-  //   font-style: map-get($font, 'style');
-  //   src: local(map-get($font, 'family'));
-  //   src: url('./fonts/map-get($font, "filename")-bold.woff2') format(woff2),
-  //     url('./fonts/map-get($font, "filename")-bold.woff2') format(woff2);
-  //   font-style: map-get($font, 'normal');
-  // }
 }
 
