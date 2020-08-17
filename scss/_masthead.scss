@@ -54,8 +54,8 @@
     align-items: center;
 }
 
-.radio_button {
-    text-align: center;
+input[type="radio"] {
+    background-color: transparent;
 }
 
 @media (min-width: 800px) {

@@ -1,0 +1,49 @@
+@import "variable";
+
+.description {
+    padding-bottom: 362px;
+}
+
+.sos_description {
+    @include background('../image/bg_image 2.png');
+    background-size: cover;  
+    background-color: rgba(0, 0, 0, 100%);
+}
+
+.sos_description_header {
+    padding-top: 70px;
+    border-bottom: 2px solid;
+    margin-left: $base-margin;
+}
+
+.heading_question {
+    margin: $base-margin * 0;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sos_answer {
+    font-family: 'Bebas Neue';
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-right: $base-padding * 2;
+}
+
+.sos_explanation {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify; 
+    padding-top: 27px;
+    padding-bottom: $base-padding * 3;
+    padding-left: $base-padding * 2;
+    padding-right: $base-padding;
+
+}
+

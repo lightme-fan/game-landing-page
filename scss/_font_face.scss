@@ -1,37 +1,63 @@
-// From _variables.scss:
-$fonts: (
-  (
-    family: 'Open Sans',
-    file: 'OpenSans-Regular',
-    weight: 400,
-    style: normal,
-  ),
+// // From _variables.scss:
+// $fonts: (
+//   (
+//     family: 'Open Sans',
+//     file: 'OpenSans-Regular',
+//     weight: 400,
+//     style: normal,
+//   ),
 
-  (
-    family: 'Open Sans',
-    filename: 'OpenSans-Bold',
-    weight: 700,
-    style: normal,
-  ),
+//   (
+//     family: 'Open Sans',
+//     filename: 'OpenSans-Bold',
+//     weight: 700,
+//     style: normal,
+//   ),
 
-  (
-    family: 'Bebas Neue',
-    filename: 'BebasNeue-Regular',
-    weight: 400,
-    style: normal,
-  ),
-);
+//   (
+//     family: 'Bebas Neue',
+//     filename: 'BebasNeue-Regular',
+//     weight: 400,
+//     style: normal,
+//   ),
+// );
 
-@each $font in $fonts {
-  @font-face {
-    font-family: map-get($font, 'family');
-    font-weight: map-get($font, 'weight');
-    font-style: map-get($font, 'style');
-    src: local(map-get($font, 'family'));
-    src: url('./fonts/map-get($font, "filename").woff2') format(woff2),
-      url('./fonts/map-get($font, "filename").woff2') format(woff2);
-    font-style: map-get($font, 'normal');
-  }
+// @each $font in $fonts {
+//   @font-face {
+//     font-family: map-get($font, 'family');
+//     font-weight: map-get($font, 'weight');
+//     font-style: map-get($font, 'style');
+//     src: local(map-get($font, 'family'));
+//     src: url('./fonts/map-get($font, "filename").woff2') format(woff2),
+//       url('./fonts/map-get($font, "filename").woff2') format(woff2);
+//     font-style: map-get($font, 'normal');
+//   }
 
+// }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('../fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
