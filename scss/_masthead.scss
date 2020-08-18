@@ -54,8 +54,8 @@
     align-items: center;
 }
 
-input[type="radio"] {
-    background-color: transparent;
+#radio {
+    background-color: transparentize($color: #000000, $amount: 0);
 }
 
 @media (min-width: 800px) {
