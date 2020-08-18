@@ -1,13 +1,13 @@
 @import "variables/variable";
 
-.description {
-    padding-bottom: 362px;
-}
-
 .sos_description {
     @include background('../image/bg_image 2.png');
-    background-size: cover;  
-    background-color: rgba(0, 0, 0, 100%);
+    background-size: cover;
+}
+
+.description {
+    padding-bottom: 360px;
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .sos_description_header {
@@ -46,4 +46,38 @@
     padding-right: $base-padding;
 
 }
+
+
+.screenshot_image {
+    border-radius: 5px;
+}
+
+.sceenshot {
+    position: relative;
+}
+
+.screeshot1 {
+    max-width: 225px;
+    position: absolute;
+    z-index: 2;
+    top: -20px;
+    left: 10%;
+}
+
+.screeshot2 {
+    max-width: 196px;
+    position: absolute;
+    top: -10px;
+    left: 25%;
+    z-index: 1;
+}
+
+.screeshot3 {
+    max-width: 196px;
+    position: absolute;
+    top: 2px;
+    left: 30%;
+    z-index: 0;
+}
+
 

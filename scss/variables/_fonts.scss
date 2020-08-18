@@ -1,7 +1,9 @@
 $fonts: (
   (
     family: 'Open Sans',
-    file: 'OpenSans-Regular',
+    filename: 'OpenSans-Regular',
+    local1: 'Open-Sans',
+    local2: 'OpenSans',
     weight: 400,
     style: normal,
   ),
@@ -9,6 +11,8 @@ $fonts: (
   (
     family: 'Open Sans',
     filename: 'OpenSans-Bold',
+    local1: 'Open-Sans',
+    local2: 'OpenSans',
     weight: 700,
     style: normal,
   ),
@@ -16,6 +20,8 @@ $fonts: (
   (
     family: 'Bebas Neue',
     filename: 'BebasNeue-Regular',
+    local1: 'Bebas-Neue',
+    local2: 'BebasNeue',
     weight: 400,
     style: normal,
   ),

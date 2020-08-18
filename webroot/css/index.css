@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff2") format(woff2); }
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Bebas Neue"), local("Bebas-Neue"), local("BebasNeue"), url("../fonts/BebasNeue-Regular.woff2") format(woff2), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
 body {
   color: #FFFFFF;
   margin: 0rem;
@@ -162,15 +180,15 @@ input[type="radio"] {
     padding-top: 1.5rem;
     padding-bottom: 1rem 1.5; } }
 
-.description {
-  padding-bottom: 362px; }
-
 .sos_description {
   background-image: url("../image/bg_image 2.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; }
+  background-size: cover; }
+
+.description {
+  padding-bottom: 360px;
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .sos_description_header {
   padding-top: 70px;
@@ -203,3 +221,30 @@ input[type="radio"] {
   padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 1rem; }
+
+.screenshot_image {
+  border-radius: 5px; }
+
+.sceenshot {
+  position: relative; }
+
+.screeshot1 {
+  max-width: 225px;
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  left: 10%; }
+
+.screeshot2 {
+  max-width: 196px;
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  z-index: 1; }
+
+.screeshot3 {
+  max-width: 196px;
+  position: absolute;
+  top: 2px;
+  left: 30%;
+  z-index: 0; }
