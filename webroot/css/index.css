@@ -264,3 +264,14 @@ a {
   position: absolute;
   left: 95%;
   top: 170px; }
+
+.sos_features {
+  height: 515px;
+  background-image: url("../image/bg_image3.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%; }
+
+.feature_header_question {
+  margin: 0; }

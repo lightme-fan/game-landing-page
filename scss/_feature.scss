@@ -1,0 +1,10 @@
+.sos_features {
+    height: 515px;
+    @include background('../image/bg_image3.jpg');
+    background-size: cover;
+    background-position: 100%;
+}
+
+.feature_header_question {
+    margin: 0;
+}
