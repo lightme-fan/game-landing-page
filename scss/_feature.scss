@@ -1,10 +1,53 @@
+@import "variables/variable";
+
 .sos_features {
     height: 515px;
     @include background('../image/bg_image3.jpg');
     background-size: cover;
-    background-position: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: $base-padding;
 }
+
+// .feature_container {
+//     background-color: rgba(0, 0, 0, 0.5);
+// }
 
 .feature_header_question {
     margin: 0;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.feature_answer {
+    font-family: Bebas Neue;
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+
+.sos_feature_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.sos_feature_item {
+    font-family: Bebas Neue;
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    padding-bottom: $base-padding * 2;
+}
+
+.survive_at_costs {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding-bottom: $base-padding * 2;
 }
