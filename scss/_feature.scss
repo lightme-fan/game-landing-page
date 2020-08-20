@@ -1,16 +1,19 @@
 @import "variables/variable";
 
 .sos_features {
-    height: 515px;
+    max-height: 100%;
     @include background('../image/bg_image3.jpg');
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: $base-padding;
+    background-size: 100%;
+    background-position: 100%;
 }
 
-// .feature_container {
-//     background-color: rgba(0, 0, 0, 0.5);
-// }
+.feature_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30%;
+    padding-top: 20%;
+}
 
 .feature_header_question {
     margin: 0;
@@ -25,13 +28,15 @@
     font-size: 33px;
     line-height: 33px;
     letter-spacing: 3px;
+    margin: 0;
 }
 
 .sos_feature_list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 100px;
+    padding: 0;
+    padding-top: 10%;
 }
 
 .sos_feature_item {
@@ -40,7 +45,7 @@
     line-height: 21px;
     letter-spacing: 2px;
     color: #FFB548;
-    padding-bottom: $base-padding * 2;
+    padding-bottom: $base-padding;
 }
 
 .survive_at_costs {
@@ -50,4 +55,21 @@
     text-align: justify;
     color: #FFFFFF;
     padding-bottom: $base-padding * 2;
+}
+
+@media (min-width: 800px) {
+
+    .sos_features {
+        background-position: 50%;
+    }
+
+    .feature_container {
+        max-width: 1114px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        padding-top: 169px;
+        padding-bottom:258px;
+    }
+    
 }

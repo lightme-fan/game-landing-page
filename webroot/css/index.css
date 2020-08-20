@@ -199,7 +199,6 @@ ul {
 
 .sos_description_header {
   padding-top: 70px;
-  border-bottom: 2px solid;
   margin-left: 1rem; }
 
 .heading_question {
@@ -210,6 +209,12 @@ ul {
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase; }
+
+.line_separation {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute; }
 
 .sos_answer {
   font-family: 'Bebas Neue';
@@ -232,7 +237,6 @@ ul {
 .screenshot_container {
   max-width: 100%;
   max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: calc(12px * 2) 38px; }
 
 .sceenshot {
@@ -245,8 +249,7 @@ ul {
 
 .screenshot_image {
   height: 100%;
-  border-radius: 5px;
-  object-fit: cover; }
+  border-radius: 5px; }
 
 .screeshot1 {
   object-fit: cover;
@@ -254,25 +257,25 @@ ul {
   z-index: 3;
   left: 0;
   top: 0;
-  right: 0; }
+  right: calc(100% * 24 / 249); }
 
 .screeshot2 {
   object-fit: cover;
   position: absolute;
   z-index: 2;
-  transform: scale(0.9);
-  left: 15%;
+  left: calc(100% * (12 * 3) / 249);
   top: 0;
-  right: 0; }
+  transform: scale(calc(249 / 273));
+  right: calc(100% * 12 / 249); }
 
 .screeshot3 {
   object-fit: cover;
   position: absolute;
   z-index: 1;
-  transform: scale(0.8);
-  left: 15%;
+  transform: scale(calc(249 / (273 + 12)));
+  left: calc(100% * (12 * 2) / 249);
   top: 0;
-  right: 0; }
+  right: calc(100% * (12 * 2) / 249); }
 
 .switch2 {
   width: 10%;
@@ -283,14 +286,44 @@ ul {
   right: 0;
   object-fit: cover; }
 
+@media (min-width: 800px) {
+  .description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "heading screenshot" "social screenshot";
+    padding-top: 187px;
+    padding-bottom: 141px; }
+  .sos_description_header {
+    grid-area: heading;
+    position: relative; }
+  .sos_explanation {
+    grid-area: social;
+    padding-left: 50%; }
+  .screenshot_container {
+    grid-area: screenshot; }
+  .sos_answer {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    margin: 0; }
+  .line_separation {
+    position: absolute; } }
+
 .sos_features {
-  height: 515px;
+  max-height: 100%;
   background-image: url("../image/bg_image3.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 1rem; }
+  background-size: 100%;
+  background-position: 100%; }
+
+.feature_container {
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30%;
+  padding-top: 20%; }
 
 .feature_header_question {
   margin: 0;
@@ -303,13 +336,15 @@ ul {
   font-family: Bebas Neue;
   font-size: 33px;
   line-height: 33px;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  margin: 0; }
 
 .sos_feature_list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 100px; }
+  padding: 0;
+  padding-top: 10%; }
 
 .sos_feature_item {
   font-family: Bebas Neue;
@@ -317,7 +352,7 @@ ul {
   line-height: 21px;
   letter-spacing: 2px;
   color: #FFB548;
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem; }
 
 .survive_at_costs {
   font-family: 'Open Sans';
@@ -326,6 +361,17 @@ ul {
   text-align: justify;
   color: #FFFFFF;
   padding-bottom: 2rem; }
+
+@media (min-width: 800px) {
+  .sos_features {
+    background-position: 50%; }
+  .feature_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-top: 169px;
+    padding-bottom: 258px; } }
 
 .system {
   text-align: justify;
