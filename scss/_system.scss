@@ -1,0 +1,7 @@
+@import "variables/variable";
+
+.system {
+    text-align: justify;
+    @include background('../image/bg_image4.jpg');
+    background-size: cover;
+}
