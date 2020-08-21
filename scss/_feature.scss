@@ -60,14 +60,17 @@
 @media (min-width: 800px) {
 
     .sos_features {
-        background-position: 50%;
+        @include background('../image/bg3_desktop.jpg');
+        background-position: 100% 100%;
+        background-size: cover;
     }
 
     .feature_container {
         max-width: 1114px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0;
+        padding-right: 233px;
+        padding-left: 796px;
         padding-top: 169px;
         padding-bottom:258px;
     }
