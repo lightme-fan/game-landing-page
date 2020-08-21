@@ -4,4 +4,78 @@
     text-align: justify;
     @include background('../image/bg_image4.jpg');
     background-size: cover;
+    margin-top: -20px;
 }
+
+.system_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $base-padding;
+    padding-bottom: 235px;
+    padding-top: 103px;
+}
+
+.system_question {
+    font-family: Bebas Neue;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.system_answer {
+    font-family: Bebas Neue;
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
+
+.system_list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: 'os progessor'
+                          'memory storage'
+                          'graphics graphics';
+}
+
+.system_list_item {
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    text-transform: uppercase;
+}
+
+.system_description {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-transform: lowercase;
+}
+
+.system_list_item:nth-of-type(1) {
+    grid-area: os;
+}
+
+.system_list_item:nth-of-type(2) {
+    grid-area: progessor;
+}
+
+.system_list_item:nth-of-type(3) {
+    grid-area: memory;
+}
+
+.system_list_item:nth-of-type(4) {
+    grid-area: storage;
+}
+
+.system_list_item:nth-of-type(5) {
+    grid-area: graphics;
+}
+
