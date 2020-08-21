@@ -322,8 +322,8 @@ ul {
   max-width: 1114px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30%;
-  padding-top: 20%; }
+  padding-left: 40%;
+  padding-top: 27%; }
 
 .feature_header_question {
   margin: 0;
@@ -367,7 +367,6 @@ ul {
     background-image: url("../image/bg3_desktop.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
     background-size: cover; }
   .feature_container {
     max-width: 1114px;
@@ -376,7 +375,23 @@ ul {
     padding-right: 233px;
     padding-left: 796px;
     padding-top: 169px;
-    padding-bottom: 258px; } }
+    padding-bottom: 258px;
+    font-size: 24px; }
+  .feature_header_question {
+    line-height: 24px;
+    letter-spacing: 2px; }
+  .feature_answer {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px; }
+  .sos_feature_item {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 2px; }
+  .survive_at_costs {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify; } }
 
 .system {
   text-align: justify;
