@@ -426,7 +426,7 @@ ul {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 30px;
   grid-template-areas: 'os progessor' 'memory storage' 'graphics graphics'; }
 
 .system_list_item {
@@ -460,3 +460,31 @@ ul {
 
 .system_list_item:nth-of-type(5) {
   grid-area: graphics; }
+
+@media (min-width: 800px) {
+  .system {
+    background-image: url("../image/bg_image4_larger.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+  .system_header {
+    text-align: center; }
+  .system_question {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px; }
+  .system_answer {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    margin-top: 0; }
+  .system_list {
+    padding-right: 522px;
+    row-gap: 50px;
+    column-gap: 30px; }
+  .system_list_item {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px; }
+  .system_description {
+    font-size: 18px;
+    line-height: 22px; } }
