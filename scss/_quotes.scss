@@ -1,0 +1,20 @@
+@import "variables/variable";
+
+.quotes {
+    @include background('../image/bg_image5.jpg');
+}
+
+.qoute_container {
+    max-width: 1114px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $base-padding;
+}
+
+.quote_header_question {
+    margin: $base-margin * 0;
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}

@@ -488,3 +488,21 @@ ul {
   .system_description {
     font-size: 18px;
     line-height: 22px; } }
+
+.quotes {
+  background-image: url("../image/bg_image5.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.qoute_container {
+  max-width: 1114px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem; }
+
+.quote_header_question {
+  margin: 0rem;
+  font-family: 'Bebas Neue';
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px; }
