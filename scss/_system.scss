@@ -2,9 +2,10 @@
 
 .system {
     text-align: justify;
-    @include background('../image/bg_image4.jpg');
+    @include background('../image/bg_image4_larger.jpg');
     background-size: cover;
     margin-top: -20px;
+    background-position: 50%;
 }
 
 .system_container {
@@ -80,10 +81,10 @@
 }
 
 @media (min-width: 800px) {
-    .system {
-        @include background('../image/bg_image4_larger.jpg');
-        // background-position: -20%;
-    }
+    // .system {
+        
+    //     // background-position: -20%;
+    // }
 
     .system_header {
         text-align: center;

@@ -391,11 +391,12 @@ ul {
 
 .system {
   text-align: justify;
-  background-image: url("../image/bg_image4.jpg");
+  background-image: url("../image/bg_image4_larger.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -20px; }
+  margin-top: -20px;
+  background-position: 50%; }
 
 .system_container {
   max-width: 1114px;
@@ -457,10 +458,6 @@ ul {
   grid-area: graphics; }
 
 @media (min-width: 800px) {
-  .system {
-    background-image: url("../image/bg_image4_larger.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat; }
   .system_header {
     text-align: center; }
   .system_question {
