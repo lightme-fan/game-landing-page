@@ -2,8 +2,9 @@
 
 .sos_features {
     max-height: 100%;
-    @include background('../image/bg_image3.jpg');
+    @include background('../image/bg3_desktop.jpg');
     background-size: cover;
+    background-position: 50%;
 }
 
 .feature_container {
@@ -16,14 +17,14 @@
 
 .feature_header_question {
     margin: 0;
-    font-family: Bebas Neue;
+    font-family: 'Bebas Neue';
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 2px;
 }
 
 .feature_answer {
-    font-family: Bebas Neue;
+    font-family: 'Bebas Neue';
     font-size: 33px;
     line-height: 33px;
     letter-spacing: 3px;
@@ -39,7 +40,7 @@
 }
 
 .sos_feature_item {
-    font-family: Bebas Neue;
+    font-family: 'Bebas Neue';
     font-size: 21px;
     line-height: 21px;
     letter-spacing: 2px;
@@ -59,7 +60,6 @@
 @media (min-width: 800px) {
 
     .sos_features {
-        @include background('../image/bg3_desktop.jpg');
         background-size: cover;
         background-position: 17% 0;
     }

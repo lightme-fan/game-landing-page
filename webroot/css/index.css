@@ -309,10 +309,11 @@ ul {
 
 .sos_features {
   max-height: 100%;
-  background-image: url("../image/bg_image3.jpg");
+  background-image: url("../image/bg3_desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 50%; }
 
 .feature_container {
   max-width: 1114px;
@@ -323,13 +324,13 @@ ul {
 
 .feature_header_question {
   margin: 0;
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue';
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px; }
 
 .feature_answer {
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue';
   font-size: 33px;
   line-height: 33px;
   letter-spacing: 3px;
@@ -343,7 +344,7 @@ ul {
   padding-top: 10%; }
 
 .sos_feature_item {
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue';
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 2px;
@@ -360,9 +361,6 @@ ul {
 
 @media (min-width: 800px) {
   .sos_features {
-    background-image: url("../image/bg3_desktop.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 17% 0; }
   .feature_container {
