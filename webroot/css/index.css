@@ -106,11 +106,11 @@ ul {
     background-repeat: no-repeat, no-repeat; } }
 
 .masthead {
-  background-image: url("../image/bg_mobile.jpg");
+  background-image: url("../image/bg_desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: 32% 50%;
   text-align: center; }
 
 .masthead_header {
@@ -158,9 +158,6 @@ ul {
 
 @media (min-width: 800px) {
   .masthead {
-    background-image: url("../image/bg_desktop.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover; }
   .radio_button {
@@ -237,7 +234,7 @@ ul {
 .screenshot_container {
   max-width: 100%;
   max-height: 100%;
-  padding: calc(12px * 2) 38px; }
+  padding: 12px 38px; }
 
 .sceenshot {
   max-width: 100%;
@@ -266,14 +263,14 @@ ul {
   left: calc(100% * (12 * 3) / 249);
   top: 0;
   transform: scale(calc(249 / 273));
-  right: calc(100% * 12 / 249); }
+  right: calc(100% * 12/ 249); }
 
 .screeshot3 {
   object-fit: cover;
   position: absolute;
   z-index: 1;
   transform: scale(calc(249 / (273 + 12)));
-  left: calc(100% * (12 * 2) / 249);
+  left: calc(100% * (12 * 3) / 249);
   top: 0;
   right: calc(100% * (12 * 2) / 249); }
 
@@ -281,7 +278,7 @@ ul {
   width: 10%;
   height: 10%;
   position: absolute;
-  left: 100%;
+  left: 105%;
   top: 50%;
   right: 0;
   object-fit: cover; }
@@ -490,9 +487,7 @@ ul {
     line-height: 22px; } }
 
 .quotes {
-  background-image: url("../image/bg_image5.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat; }
+  background-color: black; }
 
 .qoute_container {
   max-width: 1114px;
@@ -500,9 +495,35 @@ ul {
   margin-left: auto;
   padding: 1rem; }
 
+.qoute_header {
+  padding-bottom: 56px; }
+
 .quote_header_question {
   margin: 0rem;
   font-family: 'Bebas Neue';
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px; }
+
+.quote_header_answer {
+  margin: 0rem;
+  font-family: 'Bebas Neue';
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+.qoute_one {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify; }
+
+.quote_one_desc {
+  margin: 0rem;
+  padding-bottom: 24px; }
+
+.more_testimonial_quotes {
+  padding: 10px;
+  border: none;
+  background-color: #e1b548; }

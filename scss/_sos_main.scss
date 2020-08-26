@@ -61,7 +61,7 @@
 .screenshot_container {
     max-width: 100%;
     max-height: 100%;
-    padding: calc(12px * 2) 38px;
+    padding: 12px 38px;
 }
 
 .sceenshot {
@@ -94,7 +94,7 @@
     left: calc(100% * (12 * 3) / 249);
     top: 0;
     transform: scale(calc(249 / 273));
-    right: calc(100% * 12 / 249);
+    right: calc(100% * 12/ 249);
 }
 
 .screeshot3 {
@@ -102,7 +102,7 @@
     position: absolute;
     z-index: 1;
     transform: scale(calc(249 / (273 + 12)));
-    left: calc(100% * (12 * 2) / 249);
+    left: calc(100% * (12 * 3) / 249);
     top: 0;
     right: calc(100% * (12 * 2) / 249);
 }
@@ -111,7 +111,7 @@
     width: 10%;
     height: 10%;
     position: absolute;
-    left: 100%;
+    left: 105%;
     top: 50%;
     right: 0;
     object-fit: cover;

@@ -1,9 +1,9 @@
 @import "variables/variable";
 
 .masthead {
-    @include background('../image/bg_mobile.jpg');
+    @include background('../image/bg_desktop.jpg');
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: 32% 50%;
     text-align: $text-align;
 }
 
@@ -60,7 +60,6 @@
 
 @media (min-width: 800px) {
     .masthead {
-        @include background('../image/bg_desktop.jpg');
         background-position: 50% 50%;
         background-size: cover;
     }
