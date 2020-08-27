@@ -21,7 +21,7 @@
 
 .sos_logo__link {
     color: transparent;
-    @include background('../svg/game_logo.svg');
+    @include background('../image/logo_large.png');
 }
 
 .sos_nav {

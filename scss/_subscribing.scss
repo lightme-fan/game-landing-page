@@ -11,15 +11,6 @@
     padding: $base-padding;
     padding-top: 62px;
     padding-bottom: 62px;
-    // display: grid;
-    // grid-template-columns: 2fr;
-    // row-gap: 20px;
-    // grid-template-areas: 
-    //     "picture heading heading"
-    //     "picture paragraph paragraph"
-    //     "form form form"
-    //     "button button button"
-    // ;
 }
 
 .newsletter_heading {
@@ -92,4 +83,38 @@
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 3px;
     border: none;
+}
+
+@media (min-width: 960px) {
+    .newsletter_container {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: $base-padding * 10;
+    }
+    
+    .game_subscribe {
+        max-width: 677px;
+        padding-top: 250px;
+    }
+
+    .mayan_raul_pic {
+        max-width: 446px;
+        padding-right: 147px;
+    }
+
+    .newsletter_paragrap {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 22px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .subscribe_button {
+        width: 260px;
+    }
 }
