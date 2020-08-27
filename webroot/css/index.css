@@ -485,7 +485,8 @@ ul {
   background-image: url("../image/bg_image5.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-size: cover; }
 
 .qoute_container {
   max-width: 1114px;

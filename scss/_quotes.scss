@@ -3,6 +3,7 @@
 .quotes {
     @include background('../image/bg_image5.jpg');
     background-position: 50% 50%;
+    background-size: cover;
 }
 
 .qoute_container {
