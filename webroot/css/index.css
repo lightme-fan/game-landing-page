@@ -577,7 +577,9 @@ ul {
   background-color: #1a1917; }
 
 .newsletter_container {
-  padding: 1rem; }
+  padding: 1rem;
+  padding-top: 62px;
+  padding-bottom: 62px; }
 
 .newsletter_heading {
   grid-area: heading; }
@@ -638,3 +640,117 @@ ul {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 3px;
   border: none; }
+
+.footer {
+  background-color: black; }
+
+.footer_container {
+  max-width: 1114px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  padding-top: 62px;
+  padding-bottom: 62px; }
+
+.about_the_game {
+  padding-bottom: 28px;
+  border-bottom: 1px solid; }
+
+.game_logo {
+  height: 100px;
+  margin: 0;
+  text-align: center; }
+
+.sos_logo__link {
+  height: 100px;
+  padding: 1rem;
+  background-position: 50%;
+  background-size: 50px 50px; }
+
+.game_description {
+  padding: 0;
+  padding-bottom: 42px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  grid-template-areas: "main about creature creature" "system system system quote"; }
+
+.game_description__list_item:nth-of-type(1) {
+  grid-area: main; }
+
+.game_description__list_item:nth-of-type(2) {
+  grid-area: about; }
+
+.game_description__list_item:nth-of-type(3) {
+  grid-area: creature; }
+
+.game_description__list_item:nth-of-type(4) {
+  grid-area: system; }
+
+.game_description__list_item:nth-of-type(5) {
+  grid-area: quote; }
+
+.social_media {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 28px; }
+
+.icon {
+  height: 60px;
+  color: transparent; }
+
+.facebook {
+  background-image: url("../image/facebook.png");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.twitter {
+  background-image: url("../svg/twitter_icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.youtub {
+  background-image: url("../svg/vector_icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.messanger {
+  background-image: url("../image/twitch.png");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.copyright_and_privacy {
+  padding-top: 20px; }
+
+.copyright {
+  font-size: 16px;
+  line-height: 16px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-bottom: 26px; }
+
+.privacy {
+  padding: 0;
+  text-align: center; }
+
+.game_privacy {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.services {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid;
+  border-right: 1px solid; }
