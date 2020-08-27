@@ -1,0 +1,35 @@
+@import "variables/variable";
+
+.newsletter {
+    background-color: rgb(26, 25, 23);
+}
+
+.newsletter_heading__question {
+    margin: $base-margin * 0;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.newsletter_heading__main {
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.newsletter_paragrap {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.email_form {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+}
+
+.subscribe_button {
+    background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    text-align: center;
+}
