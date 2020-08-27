@@ -576,11 +576,18 @@ ul {
 .newsletter {
   background-color: #1a1917; }
 
+.newsletter_container {
+  padding: 1rem; }
+
+.newsletter_heading {
+  grid-area: heading; }
+
 .newsletter_heading__question {
   margin: 0rem;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 .newsletter_heading__main {
   font-size: 33px;
@@ -590,13 +597,44 @@ ul {
 
 .newsletter_paragrap {
   font-size: 14px;
-  line-height: 19px; }
+  line-height: 19px;
+  grid-area: paragraph; }
 
 .email_form {
+  grid-area: form;
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 3px; }
 
 .subscribe_button {
   background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 2.94008px;
-  text-align: center; }
+  text-align: center;
+  grid-area: button; }
+
+.mayn_raul {
+  float: left;
+  grid-area: picture; }
+
+.mayan_raul_pic {
+  max-width: 230px; }
+
+.email_form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: rgba(151, 151, 151, 0.3); }
+
+.email {
+  border: none;
+  background-color: transparent;
+  color: #ffb548; }
+
+.subscribe_button {
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 3px;
+  border: none; }

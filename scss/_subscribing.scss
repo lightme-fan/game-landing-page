@@ -2,6 +2,26 @@
 
 .newsletter {
     background-color: rgb(26, 25, 23);
+    // @include background('../image/bg_subs.jpg');
+    // background-size: 230px;
+    // background-position-x: calc(50% + (230 / 2));
+}
+
+.newsletter_container {
+    padding: $base-padding;
+    // display: grid;
+    // grid-template-columns: 2fr;
+    // row-gap: 20px;
+    // grid-template-areas: 
+    //     "picture heading heading"
+    //     "picture paragraph paragraph"
+    //     "form form form"
+    //     "button button button"
+    // ;
+}
+
+.newsletter_heading {
+    grid-area: heading;
 }
 
 .newsletter_heading__question {
@@ -9,6 +29,7 @@
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .newsletter_heading__main {
@@ -21,9 +42,11 @@
 .newsletter_paragrap {
     font-size: 14px;
     line-height: 19px;
+    grid-area: paragraph;
 }
 
 .email_form {
+    grid-area: form;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 3px;
 }
@@ -32,4 +55,39 @@
     background-color: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 2.94008px;
     text-align: center;
+    grid-area: button;
+}
+
+.mayn_raul {
+    float: left;
+    grid-area: picture;
+}
+
+.mayan_raul_pic {
+    max-width: 230px;
+}
+
+.email_form {
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 20px;
+    border: none;
+    background-color: rgba(151, 151, 151, 0.3);
+}
+
+.email {
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 181, 72);
+}
+
+.subscribe_button {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 3px;
+    border: none;
 }
