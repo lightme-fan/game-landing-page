@@ -152,8 +152,12 @@
     .copyright_and_privacy {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
         padding-top: 0;
+    }
+
+    .email_form {
+        max-width: 3767px;
     }
 
     .privacy {
