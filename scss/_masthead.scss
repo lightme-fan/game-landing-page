@@ -52,6 +52,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @include background('../svg/scroll_down.svg');
+    background-position: 50% 50%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: uppercase;
 }
 
 #radio {

@@ -106,3 +106,54 @@
     display: flex;
     flex-direction: row;
 }
+
+@media (min-width: 960px) {
+    .qoute_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 160px;
+        padding-bottom: 147px;
+    }
+
+    .one_quote {
+        align-self: center;
+    }
+
+    .quote_header_question {
+        font-family: 'Bebas Neue';
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+
+    .quote_header_answer {
+        font-family: 'Bebas Neue';
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .quote_one_desc {
+        font-size: 18px;
+        line-height: 22px;
+        padding-right: $base-padding * 5;
+    }
+
+    .list_quotes {
+        display: grid;
+    }
+
+    .qoute_of_gamer {
+        justify-self: end;
+    }
+
+    .nerdreactor {
+        justify-self: start;
+    }
+
+    .Uproxx {
+        justify-self: center;
+    }
+}

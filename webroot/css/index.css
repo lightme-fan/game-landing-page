@@ -50,21 +50,30 @@ ul {
   background-position: 0 0;
   background-repeat: no-repeat; }
 
-.sos_nav {
-  display: none; }
+.language_form {
+  align-self: center; }
 
 .languages {
   border-top: none;
   border-bottom: none;
   border-left: none;
-  padding-block-start: 1rem;
-  padding-inline-start: 7rem; }
+  padding: 0rem;
+  align-self: center; }
 
 .language {
   border: none;
   background-color: transparent;
   color: #FFFFFF;
   text-align: center; }
+
+.language_option {
+  background-color: black; }
+
+.list_menu {
+  align-self: center; }
+
+.sos_menu::-webkit-details-marker {
+  display: none; }
 
 .sos_menu {
   color: transparent;
@@ -75,11 +84,36 @@ ul {
   background-position: 50%;
   border-right: 1px solid; }
 
-.header_icons {
+.sos_nav {
+  padding-left: 5px; }
+
+.sos_list__item > a {
+  color: white; }
+
+.sos_menu_nav {
   display: none; }
 
 @media (min-width: 800px) {
-  .sos_nav {
+  .language_form::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("../svg/steam.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url("../svg/xbox.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+  .header_icons {
+    order: 1; }
+  .language_form {
+    order: 3; }
+  .sos_menu {
+    display: none; }
+  .list_menu {
+    display: none; }
+  .sos_menu_nav {
+    order: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,22 +122,13 @@ ul {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    text-align: right;
     letter-spacing: 0.1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    align-self: center; }
   .sos_list__item {
     padding-right: 2rem; }
-  .languages {
-    padding-inline-start: 0rem; }
-  .language {
-    display: block;
-    text-align: end; }
   .sos_menu {
-    display: none; }
-  .header_icons {
-    display: block;
-    background-image: url("../svg/xbox.svg"), url("../svg/steam.svg");
-    background-repeat: no-repeat, no-repeat; } }
+    display: none; } }
 
 .masthead {
   background-image: url("../image/bg_desktop.jpg");
@@ -151,7 +176,17 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  background-image: url("../svg/scroll_down.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+  text-transform: uppercase; }
 
 #radio {
   background-color: black; }
@@ -358,40 +393,6 @@ ul {
   text-align: justify;
   color: #FFFFFF;
   padding-bottom: 2rem; }
-
-details {
-  padding: 1rem;
-  padding-left: 3rem;
-  position: relative; }
-
-details::before {
-  content: "";
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  position: absolute;
-  top: 1.5rem;
-  left: 1rem;
-  z-index: 2; }
-
-details::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: calc(7rem + 6px);
-  background-color: white;
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 1; }
-
-details:last-child::after {
-  height: 0; }
-
-details[open]::after {
-  background-color: white; }
 
 summary::-webkit-details-marker {
   display: none; }
@@ -609,6 +610,39 @@ summary::-webkit-details-marker {
 .quote_about_author {
   display: flex;
   flex-direction: row; }
+
+@media (min-width: 960px) {
+  .qoute_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 160px;
+    padding-bottom: 147px; }
+  .one_quote {
+    align-self: center; }
+  .quote_header_question {
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px; }
+  .quote_header_answer {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  .quote_one_desc {
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 5rem; }
+  .list_quotes {
+    display: grid; }
+  .qoute_of_gamer {
+    justify-self: end; }
+  .nerdreactor {
+    justify-self: start; }
+  .Uproxx {
+    justify-self: center; } }
 
 .newsletter {
   background-color: #1a1917; }

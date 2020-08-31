@@ -11,31 +11,39 @@
 <body>
     <header class="sos">
         <div class="sos_header">
-            <h1 class="sos_logo">
-                <a href="sos_game" class="sos_logo__link">Sos</a>
+            <h1 for="sos_logo" class="icon icon_menu sos_logo">
+                <a href="/game-landing-logo/" class="sos_logo__link">Logo</a>
             </h1>
-
-            <ul class="sos_nav">
-                <li class="sos_list__item main">Main</li>
-                <li class="sos_list__item about">About</li>
-                <li class="sos_list__item game_feature">Game features</li>
-                <li class="sos_list__item system">System requires</li>
-                <li class="sos_list__item quotes">Quotes</li>
-            </ul>
-
-            <fieldset class="languages">
-                <label for="languages"></label>
-                <select name="languages" id="languages" class="language">
-                    <option value="english">ENG</option>
-                    <option value="russian">RUS</option>
-                    <option value="french">FRA</option>
-                    <option value="dutch">DEU</option>
-                </select>
-            </fieldset>
-            <p class="sos_menu">Menu</p>
-            <div class="header_icons">
-                Header icons
+            
+            <div class="language_form">
+                <fieldset class="languages">
+                    <select name="languages" id="languages" class="language">
+                        <option class="language_option" value="english">ENG</option>
+                        <option class="language_option" value="russian">RUS</option>
+                        <option class="language_option" value="french">FRA</option>
+                        <option class="language_option" value="dutch">DEU</option>
+                    </select>
+                </fieldset>
             </div>
+
+            <details class="list_menu">
+                <summary class="sos_menu">Menu</summary>
+                <ul class="sos_nav">
+                    <li class="sos_list__item main"><a href="main">Main</a></li>
+                    <li class="sos_list__item about"><a href="about">About</a></li>
+                    <li class="sos_list__item game_feature"><a href="game-features">Game features</a></li>
+                    <li class="sos_list__item all_system"><a href="system-requires">System requires</a></li>
+                    <li class="sos_list__item the_quotes"><a href="quotes">Quotes</a></li>
+                </ul>
+            </details>
+
+            <ul class="sos_menu_nav">
+                <li class="sos_list__item main"><a href="main">Main</a></li>
+                <li class="sos_list__item about"><a href="about">About</a></li>
+                <li class="sos_list__item game_feature"><a href="game-features">Game features</a></li>
+                <li class="sos_list__item all_system"><a href="system-requires">System requires</a></li>
+                <li class="sos_list__item the_quotes"><a href="quotes">Quotes</a></li>
+            </ul>
         </div>
     </header>
 
@@ -50,7 +58,7 @@
                     </div>
 
                     <div class="sos_story">
-                        <p>The story</p>
+                        <p class="scroll_down">The story</p>
                         <div class="radio_button">
                             <input type="radio" id="radio" checked>
                             <input type="radio" id="radio">
@@ -180,17 +188,19 @@
 
             <section class="quotes">
                 <div class="qoute_container">
-                    <header class="qoute_header">
-                        <h2 class="quote_header_question">What people think?</h2>
-                        <p class="quote_header_answer">Press quotes</p>
-                    </header>
-                    <div class="quote_one">
-                        <p class="quote_one_desc">
-                            Our goal is to create a product and service that you’re satisfied with and use it every day.
-                            This is why we’re constantly working on our services to make it better every day and really
-                            listen to what our users has to say.
-                        </p>
-                        <button class="more_testimonial_quotes">Read more testimonials</button>
+                    <div class="one_quote">
+                        <header class="qoute_header">
+                            <h2 class="quote_header_question">What people think?</h2>
+                            <p class="quote_header_answer">Press quotes</p>
+                        </header>
+                        <div class="quote_one">
+                            <p class="quote_one_desc">
+                                Our goal is to create a product and service that you’re satisfied with and use it every day.
+                                This is why we’re constantly working on our services to make it better every day and really
+                                listen to what our users has to say.
+                            </p>
+                            <button class="more_testimonial_quotes">Read more testimonials</button>
+                        </div>
                     </div>
                     <div class="more_quotes">
                         <ul class="list_quotes">

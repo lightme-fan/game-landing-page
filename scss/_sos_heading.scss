@@ -17,6 +17,7 @@
 
 .sos_logo {
     margin: $base-margin * 0;
+
 }
 
 .sos_logo__link {
@@ -24,16 +25,16 @@
     @include background('../image/logo_large.png');
 }
 
-.sos_nav {
-    display: none;
+.language_form {
+    align-self: center;
 }
 
 .languages {
     border-top: none;
     border-bottom: none;
     border-left: none;
-    padding-block-start: $base-padding;
-    padding-inline-start: $base-padding * 7;
+    padding: $base-padding * 0;
+    align-self: center;
 }
 
 .language {
@@ -41,6 +42,18 @@
     background-color: transparent;
     color: $base-color;
     text-align: center;
+}
+
+.language_option {
+    background-color: black;
+}
+
+.list_menu {
+    align-self: center;
+}
+
+.sos_menu::-webkit-details-marker {
+    display: none;
 }
 
 .sos_menu {
@@ -51,12 +64,45 @@
     border-right: 1px solid;  
 }
 
-.header_icons {
+.sos_nav {
+    padding-left: 5px;
+}
+
+.sos_list__item > a {
+    color: white;
+}
+
+.sos_menu_nav {
     display: none;
 }
 
 @media (min-width: 800px) {
-    .sos_nav {
+    .language_form::after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        @include background('../svg/steam.svg');
+        @include background('../svg/xbox.svg');
+    }
+
+    .header_icons {
+        order: 1;
+    }
+
+    .language_form {
+        order: 3;
+    }
+
+    .sos_menu {
+        display: none;
+    }
+
+    .list_menu {
+        display: none;
+    }
+
+    .sos_menu_nav {
+        order: 2;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -65,30 +111,27 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;
-        text-align: right;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+        align-self: center;
     }
+
     .sos_list__item {
         padding-right: $base-padding * 2;
     }
 
-    .languages {
-        padding-inline-start: $base-padding * 0;
-    }
-
-    .language {
-        display: block;
-        text-align: end;
-    }
+    // .language {
+    //     display: block;
+    //     text-align: end;
+    // }
 
     .sos_menu {
         display: none;
     }
 
-    .header_icons {
-        display: block;
-        background-image: url('../svg/xbox.svg'), url('../svg/steam.svg');
-        background-repeat: no-repeat, no-repeat;
-    }
+    // .header_icons {
+    //     display: block;
+    //     background-image: url('../svg/xbox.svg'), url('../svg/steam.svg');
+    //     background-repeat: no-repeat, no-repeat;
+    // }
 }

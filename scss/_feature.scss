@@ -57,44 +57,44 @@
     padding-bottom: $base-padding * 2;
 }
 
-details {
-    padding: 1rem;
-    padding-left: 3rem;
-    position: relative;
-}
+// details {
+//     padding: 1rem;
+//     padding-left: 3rem;
+//     position: relative;
+// }
 
-details::before {
-    content: "";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 50%;
-    position: absolute;
-    top: 1.5rem;
-    left: 1rem;
-    z-index: 2;
-}
+// details::before {
+//     content: "";
+//     display: block;
+//     width: 1rem;
+//     height: 1rem;
+//     border: 1px solid #FFFFFF;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: 1.5rem;
+//     left: 1rem;
+//     z-index: 2;
+// }
 
-details::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: calc(7rem + 6px);
-    background-color: white;
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    z-index: 1;
-}
+// details::after {
+//     content: "";
+//     display: block;
+//     width: 1px;
+//     height: calc(7rem + 6px);
+//     background-color: white;
+//     position: absolute;
+//     top: 1.5rem;
+//     left: 1.5rem;
+//     z-index: 1;
+// }
 
-details:last-child::after {
-    height: 0;
-}
+// details:last-child::after {
+//     height: 0;
+// }
 
-details[open]::after {
-    background-color: white;
-}
+// details[open]::after {
+//     background-color: white;
+// }
 
 summary::-webkit-details-marker {
     display: none;
