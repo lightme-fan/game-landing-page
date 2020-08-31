@@ -72,9 +72,9 @@
     color: white;
 }
 
-.sos_menu_nav {
-    display: none;
-}
+// .sos_menu_nav {
+//     display: none;
+// }
 
 @media (min-width: 800px) {
     .language_form::after {
@@ -93,15 +93,19 @@
         order: 3;
     }
 
+    .list_menu[open] {
+        display: block;
+    }
+
+    .list_menu#detail-content {
+        display: block;
+    }
+
     .sos_menu {
         display: none;
     }
 
-    .list_menu {
-        display: none;
-    }
-
-    .sos_menu_nav {
+    .list_menu[open] > .sos_nav {
         order: 2;
         display: flex;
         flex-direction: row;
@@ -120,18 +124,4 @@
         padding-right: $base-padding * 2;
     }
 
-    // .language {
-    //     display: block;
-    //     text-align: end;
-    // }
-
-    .sos_menu {
-        display: none;
-    }
-
-    // .header_icons {
-    //     display: block;
-    //     background-image: url('../svg/xbox.svg'), url('../svg/steam.svg');
-    //     background-repeat: no-repeat, no-repeat;
-    // }
 }

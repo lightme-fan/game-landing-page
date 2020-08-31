@@ -90,9 +90,6 @@ ul {
 .sos_list__item > a {
   color: white; }
 
-.sos_menu_nav {
-  display: none; }
-
 @media (min-width: 800px) {
   .language_form::after {
     content: '';
@@ -108,11 +105,13 @@ ul {
     order: 1; }
   .language_form {
     order: 3; }
+  .list_menu[open] {
+    display: block; }
+  .list_menu#detail-content {
+    display: block; }
   .sos_menu {
     display: none; }
-  .list_menu {
-    display: none; }
-  .sos_menu_nav {
+  .list_menu[open] > .sos_nav {
     order: 2;
     display: flex;
     flex-direction: row;
@@ -126,9 +125,7 @@ ul {
     text-transform: uppercase;
     align-self: center; }
   .sos_list__item {
-    padding-right: 2rem; }
-  .sos_menu {
-    display: none; } }
+    padding-right: 2rem; } }
 
 .masthead {
   background-image: url("../image/bg_desktop.jpg");
@@ -424,7 +421,7 @@ details[open] > .summay::before {
   border-radius: 50%;
   position: absolute;
   top: 0rem;
-  left: -rem;
+  left: -2rem;
   z-index: 1; }
 
 details::after {
@@ -704,31 +701,34 @@ summary::-webkit-details-marker {
     justify-self: center; } }
 
 .newsletter {
-  background-color: #1a1917; }
+  background-color: #1a1917;
+  max-height: 523px;
+  box-sizing: border-box; }
 
 .newsletter_container {
   padding: 1rem;
   padding-top: 62px;
-  padding-bottom: 62px; }
+  padding-bottom: 62px;
+  position: relative; }
 
 .newsletter_heading {
   grid-area: heading; }
 
 .newsletter_heading__question {
   margin: 0rem;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
 .newsletter_heading__main {
-  font-size: 33px;
+  font-size: 24px;
   line-height: 33px;
   letter-spacing: 3px;
   text-transform: uppercase; }
 
 .newsletter_paragrap {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 19px;
   grid-area: paragraph; }
 
@@ -743,9 +743,19 @@ summary::-webkit-details-marker {
   text-align: center;
   grid-area: button; }
 
+.game_subscribe {
+  position: sticky;
+  z-index: 2;
+  max-width: 189px;
+  left: 50%;
+  padding-left: 111px; }
+
 .mayn_raul {
-  float: left;
-  grid-area: picture; }
+  grid-area: picture;
+  position: absolute;
+  top: 14%;
+  left: -30%;
+  z-index: 1; }
 
 .mayan_raul_pic {
   max-width: 230px; }
@@ -769,7 +779,8 @@ summary::-webkit-details-marker {
   padding-bottom: 12px;
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 3px;
-  border: none; }
+  border: none;
+  margin-top: 1rem; }
 
 @media (min-width: 960px) {
   .newsletter_container {
