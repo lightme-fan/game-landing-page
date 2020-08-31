@@ -53,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
     @include background('../svg/scroll_down.svg');
-    background-position: 50% 50%;
+    background-position: 24px 34px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 12px;
@@ -63,7 +63,7 @@
 }
 
 #radio {
-    background-color: transparentize($color: #000000, $amount: 0);
+    background-color: transparent;
 }
 
 @media (min-width: 800px) {
@@ -99,5 +99,9 @@
         padding-right: $base-padding * 3;
         padding-top: $base-padding * 1.5;
         padding-bottom: $base-padding 1.5;
+    }
+
+    .sos_story {
+        background-position: 50% 50%;
     }
 }

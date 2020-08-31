@@ -177,7 +177,7 @@ ul {
   background-image: url("../svg/scroll_down.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 24px 34px;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 12px;
@@ -186,7 +186,7 @@ ul {
   text-transform: uppercase; }
 
 #radio {
-  background-color: black; }
+  background-color: transparent; }
 
 @media (min-width: 800px) {
   .masthead {
@@ -210,7 +210,9 @@ ul {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1.5rem;
-    padding-bottom: 1rem 1.5; } }
+    padding-bottom: 1rem 1.5; }
+  .sos_story {
+    background-position: 50% 50%; } }
 
 .sos_description {
   background-image: url("../image/bg_image 2.png");
@@ -341,11 +343,12 @@ ul {
 
 .sos_features {
   max-height: 100%;
-  background-image: url("../image/bg3_desktop.jpg");
+  background-image: url("../image/bg_subs2.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%; }
+  background-size: 100%;
+  background-position: 0 50%;
+  background-color: black; }
 
 .feature_container {
   max-width: 1114px;
@@ -404,7 +407,7 @@ details {
   display: block;
   width: 1rem;
   height: 1rem;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
   position: absolute;
   top: 0rem;
@@ -703,7 +706,12 @@ summary::-webkit-details-marker {
 .newsletter {
   background-color: #1a1917;
   max-height: 523px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-image: url("../image/bg_subs.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 0 calc(50% / 2); }
 
 .newsletter_container {
   padding: 1rem;
@@ -744,21 +752,12 @@ summary::-webkit-details-marker {
   grid-area: button; }
 
 .game_subscribe {
-  position: sticky;
-  z-index: 2;
   max-width: 189px;
-  left: 50%;
-  padding-left: 111px; }
-
-.mayn_raul {
-  grid-area: picture;
-  position: absolute;
-  top: 14%;
-  left: -30%;
-  z-index: 1; }
+  padding-left: 30%; }
 
 .mayan_raul_pic {
-  max-width: 230px; }
+  max-width: 230px;
+  max-height: 358px; }
 
 .email_form {
   display: flex;
@@ -782,7 +781,7 @@ summary::-webkit-details-marker {
   border: none;
   margin-top: 1rem; }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) {
   .newsletter_container {
     display: flex;
     flex-direction: row-reverse;

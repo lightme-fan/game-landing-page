@@ -4,11 +4,11 @@
     background-color: rgb(26, 25, 23);
     max-height: 523px;
     box-sizing: border-box;
-    // background-image:
+    @include background('../image/bg_subs.jpg');
     // linear-gradient(to right, hsl(231deg 0% 0% / 0%), hsl(407deg 100% 0% / 73%)),
-    //         url('../image/bg_subscribe.jpg');
-    // // background-size: 230px;
-    // // background-position-x: calc(50% + (230 / 2));
+            
+    background-size: 50%;
+    background-position: 0 calc(50% / 2);
 }
 
 .newsletter_container {
@@ -57,23 +57,13 @@
 }
 
 .game_subscribe {
-    position: sticky;
-    z-index: 2;
     max-width: 189px;
-    left: 50%;
-    padding-left: 111px;
-}
-
-.mayn_raul {
-    grid-area: picture;
-    position: absolute;
-    top: 14%;
-    left: -30%;
-    z-index: 1;
+    padding-left: 30%;
 }
 
 .mayan_raul_pic {
     max-width: 230px;
+    max-height: 358px;
 }
 
 .email_form {
@@ -102,7 +92,7 @@
     margin-top: $base-margin;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) {
     .newsletter_container {
         display: flex;
         flex-direction: row-reverse;
