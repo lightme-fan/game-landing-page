@@ -4,20 +4,18 @@
     @include background('../image/bg_image 2.png');
     background-size: cover;
     background-position: 100%;
-    background-color: rgba(0, 0, 0, .8);
 }
 
 .description {
     max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
-    // padding-bottom: calc(689px / 2);
+    background-color: rgba(0, 0, 0, 0.9);
     position: relative;
 }
 
 .sos_description_header {
     padding-top: 70px;
-    margin-left: $base-margin;
 }
 
 .heading_question {
@@ -42,8 +40,6 @@
     font-size: 33px;
     line-height: 33px;
     letter-spacing: 3px;
-    text-transform: uppercase;
-    padding-right: $base-padding * 2;
 }
 
 .sos_explanation {
