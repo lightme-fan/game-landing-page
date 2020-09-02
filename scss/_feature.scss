@@ -2,18 +2,25 @@
 
 .sos_features {
     max-height: 100%;
-    @include background('../image/bg_subs2.png');
-    background-size: 100%;
-    background-position: 0 50%;
-    background-color: hsl(0deg, 0%, 0%)
+    @include background('../image/bg3_desktop.jpg');
+    // background-size: 100%;
+    background-position: 30%;
+    // min-height: 515px;
 }
 
 .feature_container {
     max-width: 1114px;
+    min-height: 515px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40%;
     padding-top: 20%;
+    background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
+
+}
+
+.sos_features_header {
+    padding-left: $base-padding;
 }
 
 .feature_header_question {
@@ -38,6 +45,7 @@
     justify-content: space-between;
     padding: 0;
     padding-top: 10%;
+    padding-bottom: 23px;
 }
 
 .sos_feature_item {
@@ -46,7 +54,7 @@
     line-height: 21px;
     letter-spacing: 2px;
     color: #FFB548;
-    padding-bottom: $base-padding;
+    // padding-bottom: $base-padding;
 }
 
 .survive_at_costs {
@@ -55,11 +63,11 @@
     line-height: 16px;
     text-align: justify;
     color: #FFFFFF;
-    padding-bottom: $base-padding * 2;
+    // padding-bottom: $base-padding * 2;
 }
 
 details {
-    padding: 1rem;
+    // padding: 1rem;
     padding-left: 3rem;
     position: relative;
 }
@@ -102,8 +110,8 @@ details::after {
     height: 100%;
     background-color: white;
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 0.5rem;
+    left: 1.55rem;
     z-index: 2;
 }
 
@@ -114,8 +122,8 @@ details[open]::after {
     height: 100%;
     background-color: white;
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 0.5rem;
+    left: 1.55rem;
     z-index: 2;
 }
 
@@ -143,7 +151,10 @@ summary::-webkit-details-marker {
         padding-top: 169px;
         padding-left: 50%;
         font-size: 24px;
+        background-image: radial-gradient(105.45% 100.77% at 0.45% 68.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
     }
+
+    // radial-gradient(105.45% 100.77% at 0.45% 68.62%, hsl(0deg 0% 100% / 0%) 0%, hsl(0deg 0% 0% / 0%) 0%, hsl(210deg 20% 2% / 52%) 25.99%, hsl(210deg 14% 3% / 74%) 65.03%, hsl(200deg 16% 4%) 99.74%)
     
     .feature_header_question {
         line-height: 24px;
@@ -164,8 +175,8 @@ summary::-webkit-details-marker {
         font-size: 36px;
         line-height: 36px;
         letter-spacing: 2px;
+        line-height: 22px;
     }
-
 
     .survive_at_costs {
         font-size: 18px;

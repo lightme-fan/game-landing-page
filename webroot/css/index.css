@@ -2,19 +2,19 @@
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff") format(woff); }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
-  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff2") format(woff2); }
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff") format(woff); }
 
 @font-face {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
-  src: local("Bebas Neue"), local("Bebas-Neue"), local("BebasNeue"), url("../fonts/BebasNeue-Regular.woff2") format(woff2), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+  src: local("Bebas Neue"), local("Bebas-Neue"), local("BebasNeue"), url("../fonts/BebasNeue-Regular.woff2") format(woff2), url("../fonts/BebasNeue-Regular.woff") format(woff); }
 
 body {
   color: #FFFFFF;
@@ -343,19 +343,22 @@ ul {
 
 .sos_features {
   max-height: 100%;
-  background-image: url("../image/bg_subs2.png");
+  background-image: url("../image/bg3_desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 50%;
-  background-color: black; }
+  background-position: 30%; }
 
 .feature_container {
   max-width: 1114px;
+  min-height: 515px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40%;
-  padding-top: 20%; }
+  padding-top: 20%;
+  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
+
+.sos_features_header {
+  padding-left: 1rem; }
 
 .feature_header_question {
   margin: 0;
@@ -376,26 +379,24 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
-  padding-top: 10%; }
+  padding-top: 10%;
+  padding-bottom: 23px; }
 
 .sos_feature_item {
   font-family: 'Bebas Neue';
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 2px;
-  color: #FFB548;
-  padding-bottom: 1rem; }
+  color: #FFB548; }
 
 .survive_at_costs {
   font-family: 'Open Sans';
   font-size: 14px;
   line-height: 16px;
   text-align: justify;
-  color: #FFFFFF;
-  padding-bottom: 2rem; }
+  color: #FFFFFF; }
 
 details {
-  padding: 1rem;
   padding-left: 3rem;
   position: relative; }
 
@@ -434,8 +435,8 @@ details::after {
   height: 100%;
   background-color: white;
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 0.5rem;
+  left: 1.55rem;
   z-index: 2; }
 
 details[open]::after {
@@ -445,8 +446,8 @@ details[open]::after {
   height: 100%;
   background-color: white;
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 0.5rem;
+  left: 1.55rem;
   z-index: 2; }
 
 details:last-child::after {
@@ -467,7 +468,8 @@ summary::-webkit-details-marker {
     padding-right: 1rem;
     padding-top: 169px;
     padding-left: 50%;
-    font-size: 24px; }
+    font-size: 24px;
+    background-image: radial-gradient(105.45% 100.77% at 0.45% 68.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
   .feature_header_question {
     line-height: 24px;
     letter-spacing: 2px; }
@@ -480,7 +482,8 @@ summary::-webkit-details-marker {
   .sos_feature_item {
     font-size: 36px;
     line-height: 36px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    line-height: 22px; }
   .survive_at_costs {
     font-size: 18px;
     line-height: 22px;
