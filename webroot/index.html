@@ -2,22 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game</title>
-  <link rel="stylesheet" href="./css/index.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
 
-<body>
-  <header class="sos">
-    <div class="sos_header">
+  <body>
+    <input type="checkbox" id="menu_checkbox" class="input_checkbox">
+    <header class="sos">
+      <label for="menu_checkbox" class="sos_menu">
+        <span class="a11y">Open the menu</span>
+      </label>
+
+      <nav class="menu_navigation">
+        <ul class="sos_menu_nav">
+          <li class="sos_list__item main"><a class="menu_link" href="main">Main</a></li>
+          <li class="sos_list__item about"><a class="menu_link" href="about">About</a></li>
+          <li class="sos_list__item game_feature"><a class="menu_link" href="game-features">Game features</a></li>
+          <li class="sos_list__item all_system"><a class="menu_link" href="system-requires">System requires</a></li>
+          <li class="sos_list__item the_quotes"><a class="menu_link" href="quotes">Quotes</a></li>
+        </ul>
+      </nav>
+
       <h1 for="sos_logo" class="icon icon_menu sos_logo">
         <a href="/game-landing-logo/" class="sos_logo__link">Logo</a>
       </h1>
 
       <div class="language_form">
         <fieldset class="languages">
-          <select name="languages" id="languages" class="language">
+          <select name="languages" id="languages" class="language" open>
             <option class="language_option" value="english">ENG</option>
             <option class="language_option" value="russian">RUS</option>
             <option class="language_option" value="french">FRA</option>
@@ -25,287 +39,266 @@
           </select>
         </fieldset>
       </div>
+    </header>
 
-      <details class="list_menu">
-        <summary class="sos_menu">Menu</summary>
-        <ul class="sos_nav">
-          <li class="sos_list__item main"><a href="main">Main</a></li>
-          <li class="sos_list__item about"><a href="about">About</a></li>
-          <li class="sos_list__item game_feature"><a href="game-features">Game features</a></li>
-          <li class="sos_list__item all_system"><a href="system-requires">System requires</a></li>
-          <li class="sos_list__item the_quotes"><a href="quotes">Quotes</a></li>
-        </ul>
-      </details>
+    <main>
+      <article>
+        <header class="masthead">
+          <div class="masthead_header">
+            <div class="call_action">
+              <h2 class="all_costs">Survive at all costs</h2>
+              <p class="sos_experience">Experience new social battle <span>Royal game</span></p>
+              <button class="buy_now_on_steam">Buy now on Steam | $14.99</button>
+            </div>
 
-      <!-- <ul class="sos_menu_nav">
-                <li class="sos_list__item main"><a href="main">Main</a></li>
-                <li class="sos_list__item about"><a href="about">About</a></li>
-                <li class="sos_list__item game_feature"><a href="game-features">Game features</a></li>
-                <li class="sos_list__item all_system"><a href="system-requires">System requires</a></li>
-                <li class="sos_list__item the_quotes"><a href="quotes">Quotes</a></li>
-            </ul> -->
-    </div>
-  </header>
-
-  <main>
-    <article>
-      <header class="masthead">
-        <div class="masthead_header">
-          <div class="call_action">
-            <h2 class="all_costs">Survive at all costs</h2>
-            <p class="sos_experience">Experience new social battle <span>Royal game</span></p>
-            <button class="buy_now_on_steam">Buy now on Steam | $14.99</button>
-          </div>
-
-          <div class="sos_story">
-            <p class="scroll_down">The story</p>
-            <div class="radio_button">
-              <input type="radio" id="radio" checked>
-              <input type="radio" id="radio">
-              <input type="radio" id="radio">
-              <input type="radio" id="radio">
-              →
+            <div class="sos_story">
+              <p class="scroll_down">The story</p>
+              <div class="radio_button">
+                <input type="radio" id="radio" checked>
+                <input type="radio" id="radio">
+                <input type="radio" id="radio">
+                <input type="radio" id="radio">
+                →
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <section class="sos_description">
-        <div class="description">
-          <header class="sos_description_header">
-            <h2 class="heading_question">What is sos?</h2>
-            <p class="sos_answer">Social battle royal game</p>
-            <div class="line_separation"></div>
-          </header>
-
-          <div class="sos_explanation">
-            <p class="sos_competition">
-              Each round, you and 15 other contestants compete to
-              escape a deadly island filled with monsters. The trick is: three people can survive. Will
-              you run
-              solo or form friendships with others to escape?
-            </p>
-            <span class="sos_competition">
-              Making the right decisions could be the
-              difference between life and death.
-            </span>
-          </div>
-
-          <div class="screenshot_container">
-            <div class="sceenshot">
-              <img class="screenshot_image screeshot1" src="./image/screenshot1.jpg" alt="First sceenshot">
-              <img class="screenshot_image screeshot2" src="./image/screenshot2.jpg" alt="Second sceenshot">
-              <img class="screenshot_image screeshot3" src="./image/screenshot3.jpg" alt="Third sceenshot">
-              <svg class="switch2" width="3" height="8" viewBox="0 0 18 38" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.82153 1.95628L1.82153 36.0297L15.5642 19.1837L1.82153 1.95628Z" stroke="white"
-                  stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sos_features">
-        <div class="feature_container">
-          <header class="sos_features_header">
-            <h2 class="feature_header_question">What's so special?</h2>
-            <p class="feature_answer">Features</p>
-          </header>
-          <div class="sos_feature_list accordion">
-            <details class="sos_feature_item" open>
-              <summary class="summay">Survive at all costs</summary>
-
-              <p class="survive_at_costs sos_feature_item">
-                You have 30 minutes to find a relic, signal for extraction, and grab
-                one of three spots on the rescue chopper.
-              </p>
-            </details>
-
-            <details class="sos_feature_item" open>
-              <summary class="summay">Create allies and enemies</summary>
-              <p class="survive_at_costs sos_feature_item"></p>
-            </details>
-
-            <details class="sos_feature_item" open>
-              <summary class="summay">Impress the audience</summary>
-              <p class="survive_at_costs sos_feature_item"></p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="system">
-        <div class="system_container">
-          <header class="system_header">
-            <h2 class="system_question">Can my computer run this game?</h2>
-            <p class="system_answer">System Requirements</p>
-          </header>
-          <ul class="system_list">
-            <li class="system_list_item">
-              OS:
-              <div class="system_description">
-                Windows 7 64-bit only
-                (No OSX support at this time)
-              </div>
-            </li>
-            <li class="system_list_item">
-              Processor:
-              <div class="system_description">
-                Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
-              </div>
-            </li>
-            <li class="system_list_item">
-              Memory:
-              <div class="system_description">8GB RAM</div>
-            </li>
-            <li class="system_list_item">
-              Storage:
-              <div class="system_description">8GB available space</div>
-            </li>
-            <li class="system_list_item">
-              Graphics:
-              <div class="system_description">
-                NVIDIA GeForce GTX 660 2GB or
-                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="quotes">
-        <div class="qoute_container">
-          <div class="one_quote">
-            <header class="qoute_header">
-              <h2 class="quote_header_question">What people think?</h2>
-              <p class="quote_header_answer">Press quotes</p>
+        <section class="sos_description">
+          <div class="description">
+            <header class="sos_description_header">
+              <h2 class="heading_question">What is sos?</h2>
+              <p class="sos_answer">Social battle royal game</p>
+              <div class="line_separation"></div>
             </header>
-            <div class="quote_one">
-              <p class="quote_one_desc">
-                Our goal is to create a product and service that you’re satisfied with and use it every day.
-                This is why we’re constantly working on our services to make it better every day and really
-                listen to what our users has to say.
+
+            <div class="sos_explanation">
+              <p class="sos_competition">
+                Each round, you and 15 other contestants compete to
+                escape a deadly island filled with monsters. The trick is: three people can survive. Will
+                you run
+                solo or form friendships with others to escape?
               </p>
-              <button class="more_testimonial_quotes">Read more testimonials</button>
+              <span class="sos_competition">
+                Making the right decisions could be the
+                difference between life and death.
+              </span>
+            </div>
+
+            <div class="screenshot_container">
+              <div class="sceenshot">
+                <img class="screenshot_image screeshot1" src="./image/screenshot1.jpg" alt="First sceenshot">
+                <img class="screenshot_image screeshot2" src="./image/screenshot2.jpg" alt="Second sceenshot">
+                <img class="screenshot_image screeshot3" src="./image/screenshot3.jpg" alt="Third sceenshot">
+                <svg class="switch2" width="3" height="8" viewBox="0 0 18 38" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.82153 1.95628L1.82153 36.0297L15.5642 19.1837L1.82153 1.95628Z" stroke="white"
+                    stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
             </div>
           </div>
-          <div class="more_quotes">
-            <ul class="list_quotes">
-              <li class="list_quote_item qoute_of_gamer">
-                <div class="quote_about_author">
-                  <img class="quote_image" src="./image/quote_image.jpg" alt="Evan Lahti">
-                  <div class="author">
-                    <span class="quote_author">Evan Lahti<br></span>
-                    <span class="qoute_author_job">PC Gamer</span>
-                  </div>
-                </div>
-                <div class="author_qoute">
-                  <strong class="quote_desc"><q>One of my gaming highlights of the
-                      year.</q><br></strong>
-                  <small class="quote_date">October 18 2018</small>
+        </section>
+
+        <section class="sos_features">
+          <div class="feature_container">
+            <header class="sos_features_header">
+              <h2 class="feature_header_question">What's so special?</h2>
+              <p class="feature_answer">Features</p>
+            </header>
+            <div class="sos_feature_list accordion">
+              <details class="sos_feature_item" open>
+                <summary class="summay">Survive at all costs</summary>
+
+                <p class="survive_at_costs sos_feature_item">
+                  You have 30 minutes to find a relic, signal for extraction, and grab
+                  one of three spots on the rescue chopper.
+                </p>
+              </details>
+
+              <details class="sos_feature_item" open>
+                <summary class="summay">Create allies and enemies</summary>
+                <p class="survive_at_costs sos_feature_item"></p>
+              </details>
+
+              <details class="sos_feature_item" open>
+                <summary class="summay">Impress the audience</summary>
+                <p class="survive_at_costs sos_feature_item"></p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="system">
+          <div class="system_container">
+            <header class="system_header">
+              <h2 class="system_question">Can my computer run this game?</h2>
+              <p class="system_answer">System Requirements</p>
+            </header>
+            <ul class="system_list">
+              <li class="system_list_item">
+                OS:
+                <div class="system_description">
+                  Windows 7 64-bit only
+                  (No OSX support at this time)
                 </div>
               </li>
-              <li class="list_quote_item nerdreactor">
-                <div class="quote_about_author">
-                  <img class="quote_image" src="./image/quote_image2.jpg" alt="Jada Griffin">
-                  <div class="author">
-                    <span class="quote_author">Jada Griffin<br></span>
-                    <span class="qoute_author_job">Nerdreactor</span>
-                  </div>
-                </div>
-                <div class="author_qoute">
-                  <strong class="quote_desc"><q>The next big thing in the world of streaming and
-                      survival games.
-                    </q><br></strong>
-                  <small class="quote_date">December 21, 2018</small>
+              <li class="system_list_item">
+                Processor:
+                <div class="system_description">
+                  Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
                 </div>
               </li>
-              <li class="list_quote_item Uproxx">
-                <div class="quote_about_author">
-                  <img class="quote_image" src="./image/quote_image3.jpg" alt="Aaron Williams">
-                  <div class="author">
-                    <span class="quote_author">Aaron Williams<br></span>
-                    <span class="qoute_author_job">Uproxx</span>
-                  </div>
-                </div>
-                <div class="author_qoute">
-                  <strong class="quote_desc"><q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
-                      Ridiculous.</q><br></strong>
-                  <small class="quote_date">December 24, 2018</small>
+              <li class="system_list_item">
+                Memory:
+                <div class="system_description">8GB RAM</div>
+              </li>
+              <li class="system_list_item">
+                Storage:
+                <div class="system_description">8GB available space</div>
+              </li>
+              <li class="system_list_item">
+                Graphics:
+                <div class="system_description">
+                  NVIDIA GeForce GTX 660 2GB or
+                  AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
                 </div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="newsletter">
-        <div class="newsletter_container">
-          <div class="game_subscribe">
-            <header class="newsletter_heading">
-              <h2 class="newsletter_heading__question">Want to stay in touch?</h2>
-              <p class="newsletter_heading__main">Newsletter Subscribe </p>
-            </header>
-
-            <p class="newsletter_paragrap">
-              In order to start receiving our news, all you have to do is enter your email address. Everything
-              else will be taken care of by us. We will send you emails containing information about game. We
-              don’t spam.
-            </p>
+        <section class="quotes">
+          <div class="qoute_container">
+            <div class="one_quote">
+              <header class="qoute_header">
+                <h2 class="quote_header_question">What people think?</h2>
+                <p class="quote_header_answer">Press quotes</p>
+              </header>
+              <div class="quote_one">
+                <p class="quote_one_desc">
+                  Our goal is to create a product and service that you’re satisfied with and use it every day.
+                  This is why we’re constantly working on our services to make it better every day and really
+                  listen to what our users has to say.
+                </p>
+                <button class="more_testimonial_quotes">Read more testimonials</button>
+              </div>
+            </div>
+            <div class="more_quotes">
+              <ul class="list_quotes">
+                <li class="list_quote_item qoute_of_gamer">
+                  <div class="quote_about_author">
+                    <img class="quote_image" src="./image/quote_image.jpg" alt="Evan Lahti">
+                    <div class="author">
+                      <span class="quote_author">Evan Lahti<br></span>
+                      <span class="qoute_author_job">PC Gamer</span>
+                    </div>
+                  </div>
+                  <div class="author_qoute">
+                    <strong class="quote_desc"><q>One of my gaming highlights of the
+                        year.</q><br></strong>
+                    <small class="quote_date">October 18 2018</small>
+                  </div>
+                </li>
+                <li class="list_quote_item nerdreactor">
+                  <div class="quote_about_author">
+                    <img class="quote_image" src="./image/quote_image2.jpg" alt="Jada Griffin">
+                    <div class="author">
+                      <span class="quote_author">Jada Griffin<br></span>
+                      <span class="qoute_author_job">Nerdreactor</span>
+                    </div>
+                  </div>
+                  <div class="author_qoute">
+                    <strong class="quote_desc"><q>The next big thing in the world of streaming and
+                        survival games.
+                      </q><br></strong>
+                    <small class="quote_date">December 21, 2018</small>
+                  </div>
+                </li>
+                <li class="list_quote_item Uproxx">
+                  <div class="quote_about_author">
+                    <img class="quote_image" src="./image/quote_image3.jpg" alt="Aaron Williams">
+                    <div class="author">
+                      <span class="quote_author">Aaron Williams<br></span>
+                      <span class="qoute_author_job">Uproxx</span>
+                    </div>
+                  </div>
+                  <div class="author_qoute">
+                    <strong class="quote_desc"><q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                        Ridiculous.</q><br></strong>
+                    <small class="quote_date">December 24, 2018</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <form class="form">
-            <fieldset class="email_form">
-              <label for="email">Your email address</label>
-              <input type="email" class="email" name="email" id="email" value="aliciliniavopir@gmail.com">
-            </fieldset>
+        </section>
 
-            <button type="button" class="subscribe_button">
-              Subscribe now
-            </button>
-          </form>
+        <section class="newsletter">
+          <div class="newsletter_container">
+            <div class="game_subscribe">
+              <header class="newsletter_heading">
+                <h2 class="newsletter_heading__question">Want to stay in touch?</h2>
+                <p class="newsletter_heading__main">Newsletter Subscribe </p>
+              </header>
+
+              <p class="newsletter_paragrap">
+                In order to start receiving our news, all you have to do is enter your email address. Everything
+                else will be taken care of by us. We will send you emails containing information about game. We
+                don’t spam.
+              </p>
+            </div>
+            <form class="form">
+              <fieldset class="email_form">
+                <label for="email">Your email address</label>
+                <input type="email" class="email" name="email" id="email" value="aliciliniavopir@gmail.com">
+              </fieldset>
+
+              <button type="button" class="subscribe_button">
+                Subscribe now
+              </button>
+            </form>
 
 
-          <!-- <div class="mayn_raul">
-            <img src="./image/bg_subs.jpg" alt="Mayn_raul" class="mayan_raul_pic">
-          </div> -->
+            <!-- <div class="mayn_raul">
+              <img src="./image/bg_subs.jpg" alt="Mayn_raul" class="mayan_raul_pic">
+            </div> -->
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="about_the_game">
+          <h2 class="game_logo">
+            <a href="sos_game" class="sos_logo__link">Sos</a>
+          </h2>
+          <ul class="game_description">
+            <li class="game_description__list_item">Main</li>
+            <li class="game_description__list_item">About</li>
+            <li class="game_description__list_item">Game creature</li>
+            <li class="game_description__list_item">System requirements</li>
+            <li class="game_description__list_item">Quotes</li>
+          </ul>
+          <ul class="social_media">
+            <li class="social_media__list_item"><a href="facebook" class="icon facebook">Facebook</a></li>
+            <li class="social_media__list_item"><a href="twitter" class="icon twitter">Twitter</a></li>
+            <li class="social_media__list_item"><a href="youtub" class="icon youtub">Youtub</a></li>
+            <li class="social_media__list_item"><a href="messanger" class="icon messanger">Messanger</a></li>
+          </ul>
         </div>
-      </section>
-    </article>
-  </main>
 
-  <footer class="footer">
-    <div class="footer_container">
-      <div class="about_the_game">
-        <h2 class="game_logo">
-          <a href="sos_game" class="sos_logo__link">Sos</a>
-        </h2>
-        <ul class="game_description">
-          <li class="game_description__list_item">Main</li>
-          <li class="game_description__list_item">About</li>
-          <li class="game_description__list_item">Game creature</li>
-          <li class="game_description__list_item">System requirements</li>
-          <li class="game_description__list_item">Quotes</li>
-        </ul>
-        <ul class="social_media">
-          <li class="social_media__list_item"><a href="facebook" class="icon facebook">Facebook</a></li>
-          <li class="social_media__list_item"><a href="twitter" class="icon twitter">Twitter</a></li>
-          <li class="social_media__list_item"><a href="youtub" class="icon youtub">Youtub</a></li>
-          <li class="social_media__list_item"><a href="messanger" class="icon messanger">Messanger</a></li>
-        </ul>
+        <div class="copyright_and_privacy">
+          <p class="copyright">© 2018 Outpost Games, Inc. All Rights Reserved</p>
+          <ul class="privacy">
+            <li class="privacy__list_item"><a class="game_privacy privacy" href=" Privacy Policy"> Privacy Policy</a></li>
+            <li class="privacy__list_item"><a class="game_privacy services" href=" Terms of services"> Terms of
+                services</a></li>
+            <li class="privacy__list_item"><a class="game_privacy code" href=" Code of conduct"> Code of conduct</a></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="copyright_and_privacy">
-        <p class="copyright">© 2018 Outpost Games, Inc. All Rights Reserved</p>
-        <ul class="privacy">
-          <li class="privacy__list_item"><a class="game_privacy privacy" href=" Privacy Policy"> Privacy Policy</a></li>
-          <li class="privacy__list_item"><a class="game_privacy services" href=" Terms of services"> Terms of
-              services</a></li>
-          <li class="privacy__list_item"><a class="game_privacy code" href=" Code of conduct"> Code of conduct</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

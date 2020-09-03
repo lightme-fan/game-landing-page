@@ -3,13 +3,15 @@
 .sos {
     width: 100%;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .sos_header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: $base-padding;
     max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
@@ -23,10 +25,12 @@
 .sos_logo__link {
     color: transparent;
     @include background('../image/logo_large.png');
+    order: 1;
 }
 
 .language_form {
     align-self: center;
+    order: 2;
 }
 
 .languages {
@@ -52,24 +56,56 @@
     align-self: center;
 }
 
-.sos_menu::-webkit-details-marker {
-    display: none;
+.input_checkbox {
+    visibility: hidden;
+}
+
+.menu_navigation {
+    width: 120px;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.25);
+    z-index: 1;
+    background-color: #FFFFFF;
+    padding-inline-start: 2rem;
+    padding-block-start: 1rem;
+    transform: translateY(-110%);
+    transition: transform .2s;
+}
+
+input[type="checkbox"]:checked ~ .sos .menu_navigation {
+    transform: translateY(-5%);
+}
+
+.sos_menu_nav {
+    padding: 0;
+}
+
+.sos_list__item {
+    padding-top: $base-padding;
+}
+
+.menu_link {
+    padding: 0;
+    color: black;
+    text-transform: uppercase;
 }
 
 .sos_menu {
     color: transparent;
     @include background('../svg/menu_icon.svg');
     margin: $base-margin * 0;
+    align-self: center;
     background-position: 50%;
-    border-right: 1px solid;  
+    border-right: 1px solid;
+    order: 3;  
 }
 
 .sos_nav {
     padding-left: 5px;
-}
-
-.sos_list__item > a {
-    color: white;
 }
 
 // .sos_menu_nav {
@@ -77,6 +113,42 @@
 // }
 
 @media (min-width: 800px) {
+    .sos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .sos_logo__link {
+        order: 1;
+    }
+
+    .menu_navigation {
+        position: unset;
+        order: 2;
+        background-color: transparent;
+        transform: translateY(0);
+        width: 50%;
+        height: 0;
+        padding: $base-padding * 0;
+    }
+
+    .sos_menu_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .language_form {
+        order: 3;
+    }
+
+    .menu_link {
+        color: #FFFFFF;
+    }
+    
+
     .language_form::after {
         content: '';
         width: 30px;

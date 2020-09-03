@@ -30,13 +30,15 @@ ul {
 
 .sos {
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .sos_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
   max-width: 1114px;
   margin-left: auto;
   margin-right: auto; }
@@ -48,10 +50,12 @@ ul {
   color: transparent;
   background-image: url("../image/logo_large.png");
   background-position: 0 0;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  order: 1; }
 
 .language_form {
-  align-self: center; }
+  align-self: center;
+  order: 2; }
 
 .languages {
   border-top: none;
@@ -72,8 +76,37 @@ ul {
 .list_menu {
   align-self: center; }
 
-.sos_menu::-webkit-details-marker {
-  display: none; }
+.input_checkbox {
+  visibility: hidden; }
+
+.menu_navigation {
+  width: 120px;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding-inline-start: 2rem;
+  padding-block-start: 1rem;
+  transform: translateY(-110%);
+  transition: transform .2s; }
+
+input[type="checkbox"]:checked ~ .sos .menu_navigation {
+  transform: translateY(-5%); }
+
+.sos_menu_nav {
+  padding: 0; }
+
+.sos_list__item {
+  padding-top: 1rem; }
+
+.menu_link {
+  padding: 0;
+  color: black;
+  text-transform: uppercase; }
 
 .sos_menu {
   color: transparent;
@@ -81,16 +114,38 @@ ul {
   background-position: 0 0;
   background-repeat: no-repeat;
   margin: 0rem;
+  align-self: center;
   background-position: 50%;
-  border-right: 1px solid; }
+  border-right: 1px solid;
+  order: 3; }
 
 .sos_nav {
   padding-left: 5px; }
 
-.sos_list__item > a {
-  color: white; }
-
 @media (min-width: 800px) {
+  .sos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline; }
+  .sos_logo__link {
+    order: 1; }
+  .menu_navigation {
+    position: unset;
+    order: 2;
+    background-color: transparent;
+    transform: translateY(0);
+    width: 50%;
+    height: 0;
+    padding: 0rem; }
+  .sos_menu_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .language_form {
+    order: 3; }
+  .menu_link {
+    color: #FFFFFF; }
   .language_form::after {
     content: '';
     width: 30px;
@@ -133,7 +188,8 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 32% 50%;
-  text-align: center; }
+  text-align: center;
+  margin-top: -2rem; }
 
 .masthead_header {
   max-width: 1114px;
