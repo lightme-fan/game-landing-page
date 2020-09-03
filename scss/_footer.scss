@@ -18,11 +18,11 @@
     border-bottom: 1px solid rgba(225, 255, 255, 0.5);
 }
 
-.game_logo {
-    height: 100px;
-    margin: 0;
-    text-align: center;
-}
+// .game_logo {
+//     height: 100px;
+//     margin: 0;
+//     text-align: center;
+// }
 
 .sos_logo__link {
     height: 100px;
@@ -33,7 +33,7 @@
 
 .game_description {
     padding: 0;
-    padding-bottom: 42px;
+    // padding-bottom: 42px;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 28px;
+    // padding-bottom: 28px;
 }
 
 .icon {
@@ -106,7 +106,7 @@
     line-height: 16px;
     mix-blend-mode: normal;
     opacity: 0.5;
-    padding-bottom: 26px;
+    align-self: center;
 }
 
 .privacy {
@@ -140,7 +140,10 @@
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       padding: 0;
+    //    padding: 0;
+       align-items: flex-end;
+       padding-top: $base-padding * 2;
+       padding-bottom: $base-padding * 2;
    } 
 
    .game_description {
@@ -152,7 +155,7 @@
     .copyright_and_privacy {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
+        justify-content: space-between;
         padding-top: 0;
     }
 

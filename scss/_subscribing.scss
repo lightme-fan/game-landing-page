@@ -14,8 +14,8 @@
 .newsletter_container {
     padding: $base-padding;
     padding-top: 62px;
-    padding-bottom: 62px;
     position: relative;
+    background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
 }
 
 .newsletter_heading {
@@ -69,7 +69,8 @@
 .email_form {
     display: flex;
     flex-direction: column;
-    // margin-bottom: 20px;
+    align-self: center;
+    margin-top: $base-margin;
     border: none;
     background-color: rgba(151, 151, 151, 0.3);
 }
@@ -93,11 +94,21 @@
 }
 
 @media (min-width: 800px) {
-    .newsletter_container {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-right: $base-padding * 10;
+    .newsletter {
+        max-height: 523px;
+        box-sizing: border-box;
+        @include background('../image/bg_subscribe.jpg');
+        // linear-gradient(to right, hsl(231deg 0% 0% / 0%), hsl(407deg 100% 0% / 73%)),
+                
+        background-size: 50%;
+        background-position: 0 calc(50% / 2);
     }
+    
+    // .newsletter_container {
+    //     display: flex;
+    //     flex-direction: row-reverse;
+    //     padding-right: $base-padding * 10;
+    // }
     
     .game_subscribe {
         max-width: 677px;
@@ -118,8 +129,15 @@
     .form {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-left: $base-padding * 2;
     }
+
+    .email_form {
+        align-self: center;
+        margin-top: $base-margin;
+        margin-left: $base-margin * 12;
+    }    
 
     .subscribe_button {
         width: 260px;

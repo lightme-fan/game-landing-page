@@ -8,7 +8,7 @@
     src: local(map-get($font, 'family')),
       local(map-get($font, 'local1')),
       local(map-get($font, 'local2')),  
-      url('../fonts/#{map-get($font, "filename")}.woff2') format(woff2),
-      url('../fonts/#{map-get($font, "filename")}.woff') format(woff);
+      url('../fonts/#{map-get($font, "filename")}.woff2') format("woff2"),
+      url('../fonts/#{map-get($font, "filename")}.woff') format("woff");
   }
 }

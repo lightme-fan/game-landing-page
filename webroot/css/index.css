@@ -2,19 +2,19 @@
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff") format(woff); }
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
-  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff") format(woff); }
+  src: local("Open Sans"), local("Open-Sans"), local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
-  src: local("Bebas Neue"), local("Bebas-Neue"), local("BebasNeue"), url("../fonts/BebasNeue-Regular.woff2") format(woff2), url("../fonts/BebasNeue-Regular.woff") format(woff); }
+  src: local("Bebas Neue"), local("Bebas-Neue"), local("BebasNeue"), url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff"); }
 
 body {
   color: #FFFFFF;
@@ -215,6 +215,7 @@ ul {
     background-position: 50% 50%; } }
 
 .sos_description {
+  background-color: rgba(0, 0, 0, 0.8);
   background-image: url("../image/bg_image 2.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -225,8 +226,8 @@ ul {
   max-width: 1114px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-  position: relative; }
+  position: relative;
+  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
 
 .sos_description_header {
   padding-top: 70px; }
@@ -291,7 +292,7 @@ ul {
   object-fit: cover;
   position: absolute;
   z-index: 2;
-  left: calc(100% * (12 * 3) / 249);
+  left: calc(100% * (12 * 2.4) / 249);
   top: 0;
   transform: scale(calc(249 / 273));
   right: calc(100% * 12/ 249); }
@@ -301,7 +302,7 @@ ul {
   position: absolute;
   z-index: 1;
   transform: scale(calc(249 / (273 + 12)));
-  left: calc(100% * (12 * 3) / 249);
+  left: calc(100% * (12 * 1.5) / 249);
   top: 0;
   right: calc(100% * (12 * 2) / 249); }
 
@@ -309,7 +310,7 @@ ul {
   width: 10%;
   height: 10%;
   position: absolute;
-  left: 105%;
+  left: 95%;
   top: 50%;
   right: 0;
   object-fit: cover; }
@@ -340,7 +341,6 @@ ul {
 
 .sos_features {
   max-height: 100%;
-  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
   background-image: url("../image/bg3_desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -352,10 +352,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding-left: 40%;
-  padding-top: 20%; }
+  padding-top: 20%;
+  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
 
 .sos_features_header {
-  padding-left: 1rem; }
+  padding-left: 3rem; }
 
 .feature_header_question {
   margin: 0;
@@ -556,6 +557,8 @@ summary::-webkit-details-marker {
   grid-area: graphics; }
 
 @media (min-width: 800px) {
+  .system_container {
+    padding-bottom: 170px; }
   .system_header {
     text-align: center; }
   .system_question {
@@ -717,8 +720,8 @@ summary::-webkit-details-marker {
 .newsletter_container {
   padding: 1rem;
   padding-top: 62px;
-  padding-bottom: 62px;
-  position: relative; }
+  position: relative;
+  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
 
 .newsletter_heading {
   grid-area: heading; }
@@ -763,6 +766,8 @@ summary::-webkit-details-marker {
 .email_form {
   display: flex;
   flex-direction: column;
+  align-self: center;
+  margin-top: 1rem;
   border: none;
   background-color: rgba(151, 151, 151, 0.3); }
 
@@ -783,10 +788,14 @@ summary::-webkit-details-marker {
   margin-top: 1rem; }
 
 @media (min-width: 800px) {
-  .newsletter_container {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-right: 10rem; }
+  .newsletter {
+    max-height: 523px;
+    box-sizing: border-box;
+    background-image: url("../image/bg_subscribe.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 0 calc(50% / 2); }
   .game_subscribe {
     max-width: 677px;
     padding-top: 250px; }
@@ -800,7 +809,12 @@ summary::-webkit-details-marker {
   .form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-around;
+    padding-left: 2rem; }
+  .email_form {
+    align-self: center;
+    margin-top: 1rem;
+    margin-left: 12rem; }
   .subscribe_button {
     width: 260px; } }
 
@@ -819,11 +833,6 @@ summary::-webkit-details-marker {
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(225, 255, 255, 0.5); }
 
-.game_logo {
-  height: 100px;
-  margin: 0;
-  text-align: center; }
-
 .sos_logo__link {
   height: 100px;
   padding: 1rem;
@@ -832,7 +841,6 @@ summary::-webkit-details-marker {
 
 .game_description {
   padding: 0;
-  padding-bottom: 42px;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
@@ -862,8 +870,7 @@ summary::-webkit-details-marker {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 28px; }
+  justify-content: space-between; }
 
 .icon {
   height: 60px;
@@ -897,7 +904,7 @@ summary::-webkit-details-marker {
   line-height: 16px;
   mix-blend-mode: normal;
   opacity: 0.5;
-  padding-bottom: 26px; }
+  align-self: center; }
 
 .privacy {
   padding: 0;
@@ -925,7 +932,9 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0; }
+    align-items: flex-end;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
   .game_description {
     display: flex;
     flex-direction: row;
@@ -933,6 +942,7 @@ summary::-webkit-details-marker {
   .copyright_and_privacy {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 0; }
   .email_form {
     max-width: 3767px; }

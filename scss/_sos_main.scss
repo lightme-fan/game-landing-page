@@ -1,6 +1,7 @@
 @import "variables/variable";
 
 .sos_description {
+    background-color: rgba(0, 0, 0, 0.8);
     @include background('../image/bg_image 2.png');
     background-size: cover;
     background-position: 100%;
@@ -10,8 +11,8 @@
     max-width: 1114px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.9);
     position: relative;
+    background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
 }
 
 .sos_description_header {
@@ -87,7 +88,7 @@
     object-fit: cover;
     position: absolute;
     z-index: 2;
-    left: calc(100% * (12 * 3) / 249);
+    left: calc(100% * (12 * 2.4) / 249);
     top: 0;
     transform: scale(calc(249 / 273));
     right: calc(100% * 12/ 249);
@@ -98,7 +99,7 @@
     position: absolute;
     z-index: 1;
     transform: scale(calc(249 / (273 + 12)));
-    left: calc(100% * (12 * 3) / 249);
+    left: calc(100% * (12 * 1.5) / 249);
     top: 0;
     right: calc(100% * (12 * 2) / 249);
 }
@@ -107,7 +108,7 @@
     width: 10%;
     height: 10%;
     position: absolute;
-    left: 105%;
+    left: 95%;
     top: 50%;
     right: 0;
     object-fit: cover;
