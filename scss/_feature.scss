@@ -66,26 +66,8 @@
 }
 
 details {
-    // padding: 1rem;
     padding-left: 3rem;
     position: relative;
-}
-
-.summay {
-    position: relative;
-}
-
-.summay::before {
-    content: "";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-    position: absolute;
-    top: 0rem;
-    left: -2rem;
-    z-index: 2;
 }
 
 details[open] > .summay::before {
@@ -129,6 +111,24 @@ details[open]::after {
 details:last-child::after {
     height: 0;
     bottom: 0;
+}
+
+
+.summay {
+    position: relative;
+}
+
+.summay::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 0rem;
+    left: -2rem;
+    z-index: 2;
 }
 
 summary::-webkit-details-marker {

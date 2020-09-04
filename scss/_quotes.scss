@@ -1,7 +1,7 @@
 @import "variables/variable";
 
 .quotes {
-    @include background('../image/bg_image5.jpg');
+    @include background('../image/bg_img5.jpg');
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -54,11 +54,13 @@
 
 .list_quotes {
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .list_quote_item {
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
     background-color: rgba(151, 151, 151, 0.5);
 }
@@ -110,7 +112,7 @@
 @media (min-width: 960px) {
     .qoute_container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
         padding-top: 160px;
         padding-bottom: 147px;

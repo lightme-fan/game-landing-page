@@ -122,6 +122,9 @@ input[type="checkbox"]:checked ~ .sos .menu_navigation {
 .sos_nav {
   padding-left: 5px; }
 
+.header_icons {
+  display: none; }
+
 @media (min-width: 800px) {
   .sos {
     display: flex;
@@ -180,7 +183,19 @@ input[type="checkbox"]:checked ~ .sos .menu_navigation {
     text-transform: uppercase;
     align-self: center; }
   .sos_list__item {
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+  .header_icons {
+    order: 4;
+    display: flex;
+    flex-direction: row; }
+  .xbox_icon {
+    background-image: url("../svg/xbox.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+  .steam_icon {
+    background-image: url("../svg/steam.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat; } }
 
 .masthead {
   background-image: url("../image/bg_desktop.jpg");
@@ -456,21 +471,6 @@ details {
   padding-left: 3rem;
   position: relative; }
 
-.summay {
-  position: relative; }
-
-.summay::before {
-  content: "";
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  position: absolute;
-  top: 0rem;
-  left: -2rem;
-  z-index: 2; }
-
 details[open] > .summay::before {
   content: "";
   display: block;
@@ -509,6 +509,21 @@ details[open]::after {
 details:last-child::after {
   height: 0;
   bottom: 0; }
+
+.summay {
+  position: relative; }
+
+.summay::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 0rem;
+  left: -2rem;
+  z-index: 2; }
 
 summary::-webkit-details-marker {
   display: none; }
@@ -640,7 +655,7 @@ summary::-webkit-details-marker {
     line-height: 22px; } }
 
 .quotes {
-  background-image: url("../image/bg_image5.jpg");
+  background-image: url("../image/bg_img5.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -686,11 +701,13 @@ summary::-webkit-details-marker {
   background-color: #e1b548; }
 
 .list_quotes {
-  padding: 0; }
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; }
 
 .list_quote_item {
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(151, 151, 151, 0.5); }
 
@@ -734,7 +751,7 @@ summary::-webkit-details-marker {
 @media (min-width: 960px) {
   .qoute_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-top: 160px;
     padding-bottom: 147px; }
@@ -771,14 +788,15 @@ summary::-webkit-details-marker {
   background-image: url("../image/bg_subs.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: contain;
   background-position: 0 calc(50% / 2); }
 
 .newsletter_container {
+  max-width: 1114px;
+  margin: auto;
   padding: 1rem;
   padding-top: 62px;
-  position: relative;
-  background-image: radial-gradient(38.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%); }
+  position: relative; }
 
 .newsletter_heading {
   grid-area: heading; }
@@ -851,11 +869,14 @@ summary::-webkit-details-marker {
     background-image: url("../image/bg_subscribe.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 0 calc(50% / 2); }
+    background-size: contain;
+    background-position: calc(50% / 4) calc(50% / 2); }
+  .newsletter_container {
+    padding-top: calc(250px / 2);
+    padding-bottom: calc(250px / 2);
+    padding-left: calc(50% / 2); }
   .game_subscribe {
-    max-width: 677px;
-    padding-top: 250px; }
+    max-width: 677px; }
   .mayan_raul_pic {
     max-width: 446px;
     padding-right: 147px; }
@@ -903,10 +924,13 @@ summary::-webkit-details-marker {
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 30px;
-  grid-template-areas: "main about creature creature" "system system system quote"; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.game_description__list_item {
+  padding-bottom: 1rem; }
 
 .game_description__list_item:nth-of-type(1) {
   grid-area: main; }

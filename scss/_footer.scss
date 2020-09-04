@@ -39,13 +39,21 @@
     line-height: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 30px;
-    grid-template-areas: 
-        "main about creature creature"
-        "system system system quote"
-    ;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // row-gap: 30px;
+    // grid-template-areas: 
+    //     "main about creature creature"
+    //     "system system system quote"
+    // ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game_description__list_item {
+    padding-bottom: $base-padding;
 }
 
 .game_description__list_item:nth-of-type(1) {
